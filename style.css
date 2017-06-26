@@ -1,0 +1,137 @@
+html{
+  font-size: 18px;
+  font-size: 120%;
+}
+
+body{
+  background:#f1f1f2;
+}
+
+h1, h2{
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+
+a{
+  color: #0096c0;
+  text-decoration: none;
+  transition: all 0.25 ease;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #0077b3;
+}
+
+input[type="submit"]{
+  border:none;
+  padding:1em;
+  color:white;
+  font-size: 1em !important;
+  background: #0096c0;
+  transition: all 0.25s ease;
+}
+
+input[type="submit"]:hover{
+  background: #0077b3;
+  cursor: pointer;
+}
+
+p, a, em, li, strong, input, legend, label{
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+}
+
+legend, strong{
+  font-weight: 700;
+}
+
+fieldset{
+  border:none;
+  border-bottom:0.1em solid #ddd;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+p, a, em, strong{
+  font-size: 1em;
+  line-height: 1.25em;
+  margin-bottom:1.5em;
+}
+
+input[type="radio"]{
+  float:left;
+  margin-right: 2em;
+  margin-top:0.75em;
+}
+
+label {
+    float: left;
+    width:80%;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    float: left;
+}
+
+h1, form, fieldset, input[type="button"]{
+  margin-bottom:1.25em;
+}
+
+h2{
+  margin-bottom: 0.5em;
+}
+
+.input-wrapper{
+  display:block;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-wrapper{
+  display: block;
+  margin-left:10em;
+  margin-right: 10em;
+}
+
+.section{
+  width: auto;
+  margin: 0 25vw 1vw 25vw;
+  background-color: #e6e6e6;
+  border-radius: 1vw;
+  padding: 1em;
+  }
+
+.section li{
+  margin-top: 0.5vw;
+}
+
+#overskrift{
+margin-top: 4vw;
+text-align: center;
+font-style: normal;
+font-size: 3em;
+font-weight: bold;
+}
+
+@media all and (max-width:768px){
+  .main-wrapper{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+#result{
+  display: block;
+  padding: 2em;
+  padding-bottom: 0.5em !important;
+  padding-top: 0.5em !important;
+  background:white;
+}
+
+#result h2{
+  border-bottom:2px solid #ffe01d;
+  margin-bottom: 1.25em !important;
+}

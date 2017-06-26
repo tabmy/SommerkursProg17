@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="utf-8" />
+		<meta author="Abelsen, Tommy"/>
+		<link rel="shortcut icon" href="img/index.ico">
+		<link rel="stylesheet" href="style.css" />
+		<title>Sommerkurs Programmering 2017</title>
+
+
+	</head>
+	<body>
+		<div id="overskrift">Velkommen</div>
+		<div class="section">
+			<p>Velkommen til sommerkurs i programmering 2017, og som datastudent på Høgskolen i Oslo og Akershus.
+				Dette kurset vil gi deg som ny datastudent en liten forsmak på hva studiet innebærer.
+				Både som utvikler av programvare og nettsider, og litt om grunnleggende teknikker innen programmering og logikk.
+				Og til og med litt matematikk. Ikke få panikk! Det er i all hovedsak programmeringsmatematikk, eller logikk, som vi skal gå igjennom.
+			</p>
+
+
+			<p>Noen nyttige linker det kan være lurt å besøke først:</p>
+			<ul>
+				<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java DK</a>
+					<p>JDK (Java Development Kit) Brukes til å kompilere og å kjøre Javakode.
+						Dette er nødvendig å laste ned for dataingeniør- og informasjonsteknologistudender, siden Java er språket dere vil begynne med i faget "programmering".
+					</p>
+				</li>
+				<li><a href="https://www.sololearn.com/"> SoloLearn </a> og <a href="https://www.codecademy.com/"> Codecademy </a>
+					<p>Både Sololearn og Codecademy er fine nettsider hvor en kan få grunnleggende kjennskap til en rekke programmeringsspråk og HTML og CSS.
+						Jeg vil anbefale alle å ta en titt innom og prøve seg på noen av kursene der. De tar noen timer, avhengig av hvilket språk, og er veldig nyttige for nybegynnere.
+					</p></li>
+					<li>Litt informasjon til deg som ny student:</li>
+					<li><a href="https://student.hioa.no/bachelor-ingenior-data">Dataingeniør</a></li>
+					<li><a href="https://student.hioa.no/bachelor-informasjonsteknologi">Informasjonsteknologi</a></li>
+					<li><a href="https://student.hioa.no/bachelor-anvendt-datateknologi">Anvendt datateknologi</a></li>
+			</ul>
+		</div>
+
+		<div class="section">
+			<h2>Språk</h2>
+			<p>I dataverdenen handler mye om språk. Og med det menes ikke norsk eller engelsk.
+				Det vi mener er programmeringsspråk, som Java, PHP, C, skriptspråk som Javascript eller markerings- og styling-språk som HTML og CSS.</p>
+			<p>I denne delen skal jeg forklare kort om de språkene det undervises i for førsteårsstudenter på datastudiene på HiOA. Det er fem språk, men hvert av studiene har kun tre-fire hver.</p>
+			<p>Dataingeniør og Informasjonsteknologi (IT) vil møte på Java som sitt "hovedspråk" de to første årene på høgskolen.
+				Anvendt datateknologi (Anvendt) vil møte på PHP som sitt "hovedspråk" i hvert fall det første året.
+				Alle tre linjene vil møte på HTML og CSS, og kanskje litt Javascript, allerede fra studiestart, i et fag som heter "Webprosjekt".</p>
+			<h3>Java</h3>
+			<p></p>
+
+
+			<h3>PHP</h3>
+			<p></p>
+
+
+			<h3>HTML og CSS<h3>
+			<p></p>
+
+
+
+			<h3>JavaScript</h3>
+			<p></p>
+
+			<script>
+			var x = 0;
+			var color = ["blue", "red", "green", "yellow", "white", "gray", "orange", "purple", "turquoise", "brown", "pink", "black"];
+			var y = 0;
+			var z = 0;
+				function function1() {
+					window.alert("Hei!");
+				}
+				function function2(){
+					document.getElementById("button2").style.color = getcolor();
+				}
+
+				function function3(){
+					y++;
+					document.getElementById("button3").innerHTML = "Teller: " + y;
+				}
+
+				function function4(){
+					console.log(z);
+					if (z % 2 == 0) {
+						document.getElementById("knapptekst").style.visibility = "visible";
+						document.getElementById("button4").innerHTML = "Skjul tekst";
+					}
+					else{
+						document.getElementById("knapptekst").style.visibility = "hidden";
+						document.getElementById("button4").innerHTML = "Vis tekst";
+					}
+					z++;
+				}
+
+				function getcolor(){
+					x++;
+					return color[x% color.length];
+				}
+			</script>
+
+			<button id="button1" type="button" name="Alert-Vindu" onclick="function1()">Alert-Vindu</button>
+			<button id="button2" type="button" name="Test" onclick="function2()" style="font-weight: bold">Endre farge</button>
+			<button id="button3" type="button" name="button" onclick="function3()">Teller: </button>
+			<button id="button4" type="button" name="button" onclick="function4()">Vis tekst</button>
+			<p id="knapptekst" style="visibility:hidden"> Denne teksten vises fordi knappen ble trykket på. Trykk på den igjen for å skjule denne teksten</p>
+
+		</div>
+
+		<div class="section">
+			<p>Her er noen grunnleggene programmeringsoppgaver dere kanskje klarer å gjøre når programmeringskurset er over:</p>
+
+			<h4>Oppgave 1</h4>
+				Skriv et program som printer ut «Hello World» til skjermen.
+			<h4>Oppgave 2</h4>
+				Skriv et program som spør brukeren om navnet deres og printer deretter «Hei "<span style="font-style:italic">navn</span>"!».
+			<h4>Oppgave 3</h4>
+				Oppdater programmet i oppgave 2 slik at programmet hilser bare hvis det er Bob eller Alice.
+			<h4>Oppgave 4</h4>
+				Skriv et program som spør brukeren om et tall n og printer summen av tallene fra 1 til n.
+			<h4>Oppgave 5</h4>
+				Oppdater programmet i oppgave 4 slik at bare multipler av 3 eller 5 er med i summen. For eksempel 3, 5, 6, 9, 10, 12, 15 for n=17.
+			<h4>Oppgave 6</h4>
+				Skriv et program som spør brukeren for et tall n og gir brukeren muligheten til å velge mellom regnet sum eller regnet produkt av alle tallene fra 1 til n.
+			<h4>Oppgave 7</h4>
+				Skriv et program som printer ut multiplikasjonstabellen for tallene opptil 12 gangeren.
+			<h4>Oppgave 8</h4>
+				Skriv et program som printer ut primtall opptil 1000.
+			<h4>Oppgave 9</h4>
+				Programmer et "Gjettespill" der brukeren må gjette et hemmelig tall.
+				Etter hver gjetting skal programmet fortelle om tallet var for høyt eller lavt hvis brukeren gjetter feil.
+				Hvis brukeren gjetter riktig tall skal programmet printe ut «Congratulations, you got it right!».
+				I tillegg skal det printes ut antall forsøk før brukeren gjettet riktig tall.
+				Et tall gjettet flere ganger telles som en gang.
+			<h4>Oppgave 10</h4>
+				Skriv et program som printer ut de neste 20 skuddårene.
+			<h4>Oppgave 11</h4>
+				Skriv en funksjon som returnerer det største elementet i en liste bestående av heltall.
+
+		</div>
+	</body>
+</html>
