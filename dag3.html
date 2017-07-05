@@ -11,5 +11,78 @@
     <div id="overskrift">
         Dag 3
     </div>
+    <div class="section">
+      <h1>Intro til programmering i Java og PHP</h1>
+      <h2>Variabler</h2>
+      <p>Som nevnt tidligere er programmeringsspråk en måte å fortelle datamaskinen hva som må gjøres for å komme frem til et ønsket resultat. Vi kan si at en oppskrift for å
+        lage en brødskive krever at du skal ha:</p>
+      <ul>
+        <li>1 stk brød</li>
+        <li>7.6 gram smør</li>
+        <li>2 skiver ost</li>
+        <li>Ikke skinke</li>
+      </ul>
+      <p>Altså, vi trenger å lagre disse verdiene når vi skriver algoritmen vår for å lage en brødskive, her kommer da konseptet 'variabler' inn. En variabel kan lagre
+        data av typene heltall, desimaltall, tegn og tegnstrenger og bolske verdier (sann/falsk). Det er litt forskjellig hvordan man representerer en variabel i forskjellige
+        programmeringsspråk. Vi skal først bruke programmeringsspråket Java for å se hva slags variabler man har der:</p>
+      <h3>Variabler i java</h3>
+      <h4>Heltallstyper</h4>
+      <p>I Java representerer man heltall ved 4 forskjellige typer: (navn, størrelse)</p>
+      <ul>
+        <li>byte, 1 byte</li>
+        <li>short, 2 byte</li>
+        <li>int, 4 byte</li>
+        <li>long, 8 byte</li>
+      </ul>
+      <p>Som du ser har disse forskjellige størrelser, talltypen 'byte' har størrelsen 1 byte, som vil si at den kan holde på 2^8 = 256 tall. Siden heltallstyper også
+        skal kunne holde på negative tall, er den minste verdien til en byte -127, og den maksimale verdien 128 (den må også holde på tallet 0).</p>
+      <h4>Desimaltallstyper</h4>
+      <p>Desimaltall er mer anvendelige i situasjoner hvor man f.eks. i et banksystem hvor man ønsker
+        å holde oversikt over saldo og transaksjoner. I Java har man to desimaltallstyper:</p>
+      <ul>
+        <li>double</li>
+        <li>float</li>
+      </ul>
+      <h4>Tegn-verdier</h4>
+      <p>Man trenger også variabler for å holde på tekst, som i java er:</p>
+      <ul>
+        <li>char</li>
+        <li>String</li>
+      </ul>
+      <p>En 'char' er en representasjon av én bokstav, mens en 'String' er en samling av flere bokstaver, altså en samling av flere 'char'. String brukes da naturligvis
+        for å representere tekst.</p>
+      <h4>Boolske verdier</h4>
+      <p>En boolsk variabel er en variabel som kan ha to verdier. I Java kalles denne typen 'boolean', og har verdiene 'true' eller 'false'.</p>
+
+      <h3>Deklarasjon av variabler i Java</h3>
+      <p>Å deklarere en variabel betyr å lage en variabel når man programmerer - og gi den en verdi. Det er forskjellig hvordan man deklarerer en variabel, avhengig av
+        typen til variabelen. Generelt så deklarerer man variabler med å skrive '&lt;type&gt; &lt;navn&gt; = &lt;verdi&gt;;'. Her er noen eksempler:</p>
+      <xmp>int alder = 23;</xmp>
+      <xmp>double vekt = 90.4;</xmp>
+      <xmp>char førsteBokstav = 'A';</xmp>
+      <xmp>String navn = "Andreas";</xmp>
+      <xmp>boolean erStudent = true;</xmp>
+      <p>Ser du nøye på koden over, så er det flere ting man må legge merke til. Det første er semikolon, som settes etter hver instruksjon man skriver, for å
+        fortelle datamaskinen at dette er slutten av instruksjonen. Når man deklarerer en 'char' variabel, så må verdien dens settes mellom to enkle 'hermetegn',
+        mens verdien til en String variabel settes mellom to doble "hermetegn". </p>
+      <p>Etter man har deklarert en variabel (gitt den navn, type og evt verdi), så kan man endre på variabelen sin verdi på denne måten:</p>
+      <xmp>int a = 2;</xmp>
+      <xmp>int b;</xmp>
+      <xmp>b = a + 3;</xmp>
+      <p>Talltyper støtter også flere operasjoner som å addere (+), subtrahere (-), dividere (/), multiplisere (*) og modulo (%).
+        Man kan også utføre '+' operasjoner med strenger (String variabler), og gjøres slik:</p>
+      <xmp>String fornavn = "Andreas";</xmp>
+      <xmp>String etternavn = "Strand";</xmp>
+      <xmp>String navn = fornavn + " " + etternavn; //navn har nå verdien "Andreas Strand"</xmp>
+      <p>Legg også merke til det som står etter '//' i forrige linje. Alt man skriver etter '//' blir ikke lest som kode av datamaskinen, men
+        gir programmerer mulighet til å kommentere koden sin.</p>
+
+      <h3>Variabler i PHP</h3>
+      <p>PHP er litt annerledes enn Java når det kommer til å deklarere variabler. Her trenger man ikke å deklarere hva slags type variablene har.
+        For å opprette en variabel i PHP, trenger man kun å sette et dollartegn foran. Eksempler:</p>
+      <xmp>$a = 10;</xmp>
+      <xmp>$b = $a + 2;</xmp>
+      <xmp>$navn = "Andreas"</xmp>
+    </div>
   </body>
 </html>
