@@ -11,5 +11,58 @@
     <div id="overskrift">
         Dag 4
     </div>
+  <div class="section">
+    <a href="index.html">Tilbake</a>
+    <h1>Kontrollstrukturer</h1>
+    <p>Kontrollstrukturer kan brukes til mange ting når man programmerer. Kontrollstrukturer vil oppføre seg med hensyn til hva slags verdier variabler har.
+    Et enkelt men abstrakt eksempel er "Hvis a, så gjør b". Et mer praktisk eksempel kan være i et lyskrys. Hvis lyset er grønt så kjør, hvis det er rødt så stopp.
+    Kontrollstrukturer er ganske likt definert i alle språk, så kjenner du til kontrollstrukturene i Java, så kjenner du til kontrollstrukturer i andre språk.</p>
+
+    <h2>Logiske operatorer</h2>
+    <p>Det som er felles for alle kontrollstrukturer er at de kjører så lenge en 'statement' (/påstand) er sann. Dette kan være så lenge en bolsk variabel har verdien 'true',
+    eller det kan være i form av en annen statement. Man utfører sjekker i Java med såkalte logiske operatorer:</p>
+
+    <ul>
+      <li>'==' sjekker om to verdier er like. eks er denne sann: <xmp>2 == 2</xmp></li>
+      <li>'!=' sjekker om to verdier er ulike. eks er denne sann: <xmp>3 != 2</xmp></li>
+      <li>'&&' sjekker at to boolske verdier er sanne. eks er denne sann:<xmp>true && true</xmp></li>
+      <li>'||' sjekker at minst en av to boolske verdier er sanne. eks er denne sann: <xmp>true || false</xmp></li>
+      <li>'>' sjekker at en verdi er større enn en annen. Eks er denne sann: <xmp>3 > 2</xmp></li>
+      <li>'<' sjekker at en verdi er mindre enn en annen. Eks er denne sann: <xmp>2 < 3</xmp></li>
+      <li>Vi kan også bruke '<=' eller '>=', som betyr 'mindre eller lik' og 'større eller lik'</li>
+    </ul>
+
+    <p>Vi kan også bytte verdien til en boolsk verdi med å sette ! (utropstegn) foran.</p>
+
+    <h2>Hvilke kontrollstrukturer har vi?</h2>
+    <p><i>Prøv gjerne ut noen av disse eksemplene i <a href="https://www.compilejava.net/">denne kompilatoren</a>, så får du mer 'levende' eksempler.</i></p>
+    <ul>
+      <li>if-else<br>
+      <xmp>boolean a = true;</xmp>
+      <xmp>if(a == true){     //'if(a)' er nøyaktig det samme som if(a == true)</xmp>
+        <xmp> System.out.println("a er sann!");</xmp>
+        <xmp>}else{</xmp>
+        <xmp> System.out.println("a er ikke sann..);</xmp>
+        <xmp>}</xmp>
+        <br>
+      </li>
+      <li>for-loop
+        <xmp>for(int i = 0; i < 10; i++){</xmp>
+        <xmp> System.out.println(i);</xmp>
+        <xmp>}</xmp>
+        <br>
+      </li>
+      <li>while-loop
+        <xmp>int i = 10;</xmp>
+        <xmp>while(i > 10){</xmp>
+        <xmp> i--;</xmp>
+        <xmp>}</xmp>
+        <xmp>System.out.println(i);</xmp>
+        <br>
+      </li>
+      <li>switch</li>
+    </ul>
+  <a href="oppgaverModul7.html">Oppgaver</a>
+  </div>
   </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <style>
+        ul{
+            list-style: lower-alpha;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/index.ico">
+
+    <title>Oppgavesett 6, Java og PHP</title>
+</head>
+<body>
+<div id="overskrift">
+    Oppgavesett 6, Java og PHP
+</div>
+<div class="section">
+    <p><a href="dag3.html">Tilbake</a><br><br> Oppgavene kan gjøres individuelt, eller i par. Vi oppfordrer til i det minste å diskutere oppgavene med dere medstudenter.</p>
+    <h2>1)</h2>
+    <ul>
+        <li>Hva er en variabel, og hvorfor bruker vi det i programmering?</li>
+        <li>Hvilke primitive datatyper har vi, og hva menes med en primitiv datatype?</li>
+        <li>Forklar hvorfor vi har flere enn én datatype for heltall. Hva er konsekvensene av å bruke disse ulike typene feil?</li>
+        <li>Hva er hovedforskjellen mellom høynivå og lavnivå programmeringsspråk når vi skal opprette og gi verdi (deklarere) en variabel?</li>
+        <li>Hvordan ville du typisk deklarert en variabel i Java? Bruk gjerne internett</li>
+        <li>Hvordan ville du typisk deklarert en variabel i PHP? Bruk gjerne internett</li>
+    </ul>
+    <h2>2)</h2>
+    <p>Se for deg følgende situasjoner, diskuter og skriv ned hvilke variabler og av hvilken type du ville deklarert – forklar også hvorfor.
+        Du trenger ikke skrive kode, men ta utgangspunkt i datatypene i Java. Bruk gjerne internett for å finne svarene:</p>
+    <ul>
+        <li>Du skal lage en enkel kalkulator som skal ha muligheten til å legge sammen kun hele tall</li>
+        <li>Du skal lage en enkel kalkulator som skal ha muligheten til å trekke fra desimaltall (tall med en verdi etter komma, f.eks. 2,1)</li>
+        <li>Du skal lage et løgndetektortest-program, der brukeren av programmet kun kan svare ja eller nei.
+            Dette programmet skal kunne bestemme om brukeren av programmet lyver eller ikke (ta utgangspunkt i at maskinen har en oversikt
+            over riktige svar på spørsmålene for brukeren).</li>
+        <li>Du skal lage et program som skal regne med (addere, subtrahere, gange, dele) ekstremt høye heltall (minst over 1 milliard).</li>
+    </ul>
+    <h2>3)</h2>
+    <p>I denne oppgaven skal vi smått begynne å kode litt. Du kan begynne med å gå inn på siden <a target="_blank" href="https://www.compilejava.net/">compilejava.net</a>
+    Dette er en gratis kompilator på nettet, hvor du kan skrive og kjøre enkle Java-programmer. Det første du kan gjøre her er å viske ut alt, og fylle inn følgende:</p>
+    <xmp>public class TestKlasse{</xmp>
+    <xmp>   public static void main(String[] args){</xmp>
+    <xmp>       //HER SKRIVER DU KODE</xmp>
+    <xmp>   }</xmp>
+    <xmp>}</xmp>
+    <p>Innenfor de innerste klammene er hvor et hvert Java-program starter. Her kan du prøve deg med å deklarere variabler, og skrive de ut. Eksempelvis så kan du
+        skrive inn følgende innenfor klammene:</p>
+    <xmp>int a = 2;</xmp>
+    <xmp>System.out.println(a); //Legg variabelen du ønsker å printe ut mellom parantesene ()</xmp>
+    <p>Det vil da skrive ut verdien 2. Test dette ut med andre verdier og datatyper, så kan du hoppe videre på oppgavene under.</p>
+
+    <ul>
+        <li>Lagre fornavnet ditt i en variabel, og etternavnet i en annen. Skriv så ut begge samtidig, med et mellomrom.</li>
+        <li>Istedenfor å skrive <xmp>int a = 10;</xmp><xmp>a = a + 2;</xmp>så kan du enklere skrive <xmp>a += 2</xmp>
+        Dette gjelder også for de andre matematiske operasjonene. Gang sammen to int-variabler ved å bruke denne metoden. Skriv deretter ut resultatet.</li>
+        <li>Prøv å adder en heltallsvariabel og en desimaltallvariabel sammen, og lagre resultatet i en ny 'int' variabel. Hva skjer?
+        Kan du forklare hvorfor?</li>
+        <li>Lag en variabel av type 'byte', og gi denne verdien 127. På neste linje øker du verdien til denne variabelen med 100, skriv så ut verdien.
+        Hva får du som resultat? Hvorfor?</li>
+    </ul>
+
+</div>
+</body>
+</html>
