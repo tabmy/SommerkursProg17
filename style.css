@@ -7,6 +7,7 @@ body{
   background:#f1f1f2;
 }
 
+
 h1, h2{
   font-family: 'Lora', serif;
   font-weight: 600;
@@ -97,15 +98,52 @@ h2{
 }
 
 .section{
-  width: auto;
+
   margin: 0 25vw 1vw 25vw;
   background-color: #e6e6e6;
   border-radius: 1vw;
+  border: 1px solid black;
   padding: 1em;
   }
 
 .section li{
   margin-top: 0.5vw;
+}
+
+.header{
+  height: 4em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e6e6e6;
+  border: 1px solid black;
+  border-radius: 1vw;
+}
+
+.header_content{
+  margin: 1em;
+}
+
+.header_content a {
+  margin-left: 5em;
+}
+
+.footer {
+  height:3.5em; /* Replace with the height your footer should be */
+  width: 100%; /* Don't change */
+  bottom: 0;
+  left: 0;
+  background-color: #e6e6e6;
+  border: 1px solid black;
+  border-radius: 1vw;
+	}
+
+.footer_content {
+  height:2em; /* Replace with the height your footer should be */
+  /*width: 1000px; /* Visible width of footer */
+  /*width: 50%;*/
+  margin: 1em;
+  float: right;
 }
 
 #overskrift{
@@ -115,6 +153,8 @@ font-style: normal;
 font-size: 3em;
 font-weight: bold;
 }
+
+
 
 @media all and (max-width:768px){
   .main-wrapper{
