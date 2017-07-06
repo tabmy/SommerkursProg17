@@ -111,7 +111,7 @@ h2{
 }
 
 .header{
-  height: 4em;
+  height: 2em;
   width: 100%;
   top: 0;
   left: 0;
@@ -121,7 +121,10 @@ h2{
 }
 
 .header_content{
-  margin: 1em;
+
+  margin: 0.5em auto;
+  width: 55%;
+
 }
 
 .header_content a {
