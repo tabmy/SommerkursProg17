@@ -44,6 +44,7 @@
         <a href="https://en.wikipedia.org/wiki/ENIAC">ENIAC</a> skal ha klart å regne ut baner som tok et menneske 20 timer å regne ut på knappe 30 sekunder.
         Det sier litt om hvor effektivt datamaskiner kan løse matematiske utregninger.
       </p>
+      <img src="img/ENIAC.png" alt="ENIAC" width="60%" style="float:right; margin-left:1em">
       <p>
         Hva Turing-kompletthet er kan du lese mer om <a href="https://en.wikipedia.org/wiki/Turing_completeness">her</a>.
         Men i korte trekk betyr det at den kan utføre alt en standard programmerbar datamaskin kan gjøre.
@@ -69,6 +70,7 @@
         Ingeniører hadde klart å lage en mikroskopisk versjon av de hittil store prosessorene.
         <a href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html">Intel skriver selv</a> at deres første <a href="https://en.wikipedia.org/wiki/Microprocessor">mikroprosessor</a>, <a href="https://en.wikipedia.org/wiki/Intel_4004">Intel 4004</a> skal ha hatt en størrelse på en fingernegl og en like stor datakraft som den første datamaskinen, som tok opp et helt rom (ENIAC).
       </p>
+      <img src="img/Intel_C4004.png" alt="Intel C4004" width="60%" style="float:right;margin-left:1em;">
       <p>
         De nye prosessorene kunne kjøre programmer slik de eldre, store prosessorene kunne.
         De kunne også lagre informasjon og håndtere data helt selv.
@@ -107,20 +109,28 @@
             <strong>Prosessor</strong> eller
             <a href="https://en.wikipedia.org/wiki/Central_processing_unit">CPU</a> (Central Processing Unit)
           </li>
+          <img src="img/cpu1.png" alt="Oversiden av en CPU" width="30%" style="margin:0.5em;">
+          <img src="img/cpu2.png" alt="Undersiden av en CPU" width="30%" style="margin:0.5em;">
           <li>
             <strong>Primærminne</strong>, eller
             <a href="https://en.wikipedia.org/wiki/Random-access_memory">RAM</a> (Random Access Memory)
           </li>
+          <img src="img/ram.png" alt="RAM-brikker" width="30%" style="margin:0.5em;">
           <li>
             <strong>Sekundærminne</strong>, eller
             <a href="https://en.wikipedia.org/wiki/Hard_disk_drive">HDD</a>/<a href="https://en.wikipedia.org/wiki/Solid-state_drive">SSD</a> (Hard Disk Drive/Solid State Drive)
           </li>
+          <img src="img/hdd.png" alt="HardDiskDrive" width="30%" style="margin:0.5em;">
+          <img src="img/ssd.png" alt="SolidStateDrive" width="30%" style="margin:0.5em;">
           <li>(Man tar gjerne med grafikkort også, for å få <a href="https://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a> (grafisk brukergrensersnitt))
           </li>
+          <img src="img/gpu.png" alt="Grafikkort" width="30%" style="margin:0.5em;">
+          <img src="img/motherboard.png" alt="Hovedkort" width="30%" style="margin:0.5em;">
         </ul>
         <p>
           Alle disse komponentene blir (sammen med flere) plassert på, eller koblet til et <a href="https://en.wikipedia.org/wiki/Motherboard">hovedkort</a>
         </p>
+
         <h2>
           Komponentenes oppgaver
         </h2>
@@ -168,6 +178,100 @@
         <h1>
           Modul 4 - Binærtall
         </h1>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Binary_number">Binærtall</a> kalles også <strong>totallssystemet</strong>.
+          De to tallene systemet representerer er <strong>0</strong> og <strong>1</strong>.
+        </p>
+        <p>
+          Det er viktig å ha kjennskap til binærtall, siden datamaskinene tolker rekker av tall på totallssystemet (bytes) for å representere verdier. Eksempelvis tall, farger og bokstaver.
+        </p>
+        <p>
+          I det binære tallsystemet er <strong>posisjonen til tallene</strong> og <strong>lengden av tallene</strong> viktige. På lik måte som posisjonene på et tall beskrevet på desimal form, så må man i det binære tallsystemet ha korrekt antall og riktig plasserte sifre for å representere et gitt tall.
+        </p>
+        <h2>
+          Hvorfor binære tall?
+        </h2>
+        <p>
+          Uten å gå for mye inn i eletronikk og strøm, så er det vekselspenning som er vanligst å ha i stikkontaktene i dag. Det vil si at spenningen går i fase ideelt sett i en sinusfunksjon med periode på 1/50 sekund, dvs. med frekvens på 50Hz.
+          Dette gjør at man trenger en omformer, eller likeretter, for å gjøre strømmen om til likestrøm, som man bruker i elektronikk.
+          Likestrøm brukes fordi i motsetning til vekselstrøm kan ha en kontinuerlig spenning, så maskinene kun trenger å "skjønne" at det enten er eller ikke er strøm.
+          I datamaskiner, og elektronikk generelt, brukes det strømforsyninger og batterier som strømkilde (Selv om strømforsyninger får inn vekselspenning og batterier må lades opp).
+        </p>
+        <img src="img/ac_to_dc.png" alt="Vekselspenning til likespenning">
+        <p>
+          Grunnen til at man bruker likestrøm i elektronikk, er at det er kjempeenkelt å forholde seg til.
+          Enten så er det strøm (altså <strong>1</strong>) eller så er det ikke strøm (<strong>0</strong>).
+          Derav kommer de binære tall.
+          Maskinen tolker en rekke signaler etter hverandre hvor strømmen skrues av og på i en gitt sekvens for å representere korrekte verdier i binærtall.
+        </p>
+        <h2>
+          Tallenes posisjon
+        </h2>
+        <p>
+          Som tiligere nevnt er posisjonen til tallene, altså hvordan binærtallene representeres, viktige.
+          Man setter sammen tallene (0 og 1) i rekker av gitte lengder, hvor hver av posisjonene er en dobling av verdien til posisjonen til høyre. Man leser altså binærtall med økende verdi fra høyre mot venstre, som i desimaltallsystemet.
+        </p>
+        <p>
+          Eksempel på hvordan tallet 0 representeres i binær med 8 biter:
+        </p>
+        <img src="img/binary_number0.png" alt="0 i binærtall (8 bit)">
+        <p>
+          I og med at vi holder på med <strong>to</strong>tallsystemet, må vi finne ut hva <strong>to</strong> må være opphøyet i for å uttrykke de tall vi ønsker.
+          Eksempel tallet 9: 2 + 2 + 2 + 2 + 1 = 2<sup>3</sup> + 1 = <strong>2<sup>3</sup> + 2<sup>0</sup></strong> = 9.
+        </p>
+        <p>
+          Vi ser at vi må ha enere på "<strong>nullte</strong>" og <strong>tredje posisjon</strong>:
+        </p>
+        <img src="img/binary_number9.png" alt="9 i binærtall (8 bit)">
+        <h2>
+          Lengden på tallene
+        </h2>
+        <p>Lengden av rekken med 0 og 1 påvirker hvor store tall vi kan representere. Eksempelvis kan 8-bits binærtall (uten fortegnsbit) kun representere tall fra 0 til 255, altså 256 forskjellige tall. 255 er øvre grense bestemt av "formelen" <strong>2<sup>n</sup>-1</strong> der n i dette tilfellet er 8 (2<sup>8</sup> = 256).
+        </p>
+        <p>
+          For å kunne representere høyere tall må en bruke flere biter, altså øke bitmengden til binærtallet. For å representere lavere (positive) tall kan en fint bruke færre biter. For å representere negative tall brukes toerkomplement.</p>
+        <h2>
+          Aritmetikk
+        </h2>
+        <p>
+          Det er mulig å utføre <strong>aritmetikk</strong> (addisjon, subtraksjon, multiplikasjon og divisjon) med binære tall.
+          Eksempel på addisjon med binærtall:
+        </p>
+        <img src="img/addition.png" alt="Addisjon med binærtall.">
+        <h2>
+          Toerkomplement
+        </h2>
+        <p>
+          Toerkomplement gjør det mulig å representere negative verdier ved bruk av binærtall.
+        </p>
+        <p>
+          Fortegnet på tallverdien som representeres bestemmes av en <strong>fortegnsbit</strong>.
+          Denne biten har som eneste oppgave å vise om tallverdien er positiv (0) eller negativ (1).
+        </p>
+        <p>For å endre fortegn på et binærtall snur man (gjør om fra 0 til 1 og 1 til 0) alle biter, for så å addere med 1.</p>
+        <p>
+          Eks: fra 5 til -5 med 8 biter (med fortegnsbit):
+        </p>
+        <pre>
+          5 = 2<sup>2</sup> + 2<sup>0</sup> = 00000101
+
+          snur: 11111010 (= -6)
+
+          adderer med 1: 11111101 = -5
+        </pre>
+        <img src="img/binaryexample.png" alt="Eks på filstørrelse gitt i kB" width="30%" style="margin:0.5em;float:right;">
+        <h2>
+          Bruksområder
+        </h2>
+        <p>
+          Binærtall brukes til å representere alle filer en har på en datamaskin. Forskjellige filformater forteller "bare" hvordan de forskjellige filtypene skal leses, siden alt er lagret i 0-er og 1-ere uansett.
+        </p>
+        <p>
+          Man bruker binærtall, eller rettere sagt biter og bytes til å benevne filstørrelser. Eksempelvis kilo-, mega-, giga- og terabyte, som respektivt betyr tusen, 1 million, 1 milliard og 1000 milliarder (1 billion) byte.
+          I dataverdenen bruker man ofte -bibyte når man snakker om toerekspnonentverdier. Eksempel kibibyte (KiB) = 1024 byte, mens en kilobyte (kB) er 1000 byte</p>
+        <p>
+          Binærtall representerer også instruksjoner og kommandoer, og alt kode som er programmert blir <i>kompilert</i> og gjort om til 0 og 1 (meget simplifisert)</p>
+
       </div>
   	<div class="footer">
   		<div class="footer_content">

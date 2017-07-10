@@ -42,17 +42,13 @@
 					<p>Både Sololearn og Codecademy er fine nettsider hvor en kan få grunnleggende kjennskap til en rekke programmeringsspråk og HTML og CSS.
 						Jeg vil anbefale alle å ta en titt innom og prøve seg på noen av kursene der. De tar noen timer, avhengig av hvilket språk, og er veldig nyttige for nybegynnere.
 					</p></li>
-					<li>Litt informasjon til deg som ny student:</li>
+					<li><a href="https://hogskole-romres.ist-asp.com/WebUntis/?school=HIOA#main">Timeplan i WebUntis</a></li>
+					<p>
+						Litt informasjon til deg som ny student:
+					</p>
 					<li><a href="https://student.hioa.no/bachelor-ingenior-data">Dataingeniør</a></li>
 					<li><a href="https://student.hioa.no/bachelor-informasjonsteknologi">Informasjonsteknologi</a></li>
 					<li><a href="https://student.hioa.no/bachelor-anvendt-datateknologi">Anvendt datateknologi</a></li>
-			</ul>
-			<ul>
-				<li><a href="dag1.html">Dag 1</a></li>
-				<li><a href="dag2.html">Dag 2</a></li>
-				<li><a href="dag3.html">Dag 3</a></li>
-				<li><a href="dag4.html">Dag 4</a></li>
-				<li><a href="dag5.html">Dag 5</a></li>
 			</ul>
 		</div>
 
@@ -86,7 +82,7 @@
 			var y = 0;
 			var z = 0;
 				function function1() {
-					window.alert("Hei!");
+					window.alert("Hei!\nDu trykket på knappen, og dette vinduet kom opp!");
 				}
 				function function2(){
 					document.getElementById("button2").style.color = getcolor();
@@ -115,44 +111,89 @@
 				}
 			</script>
 
-			<button id="button1" type="button" name="Alert-Vindu" onclick="function1()">Alert-Vindu</button>
-			<button id="button2" type="button" name="Test" onclick="function2()" style="font-weight: bold">Endre farge</button>
-			<button id="button3" type="button" name="button" onclick="function3()">Teller: </button>
-			<button id="button4" type="button" name="button" onclick="function4()">Vis tekst</button>
+			<button id="button1" type="button" onclick="function1()"> Alert-Vindu</button>
+			<button id="button2" type="button"  onclick="function2()" style="font-weight: bold">Endre farge</button>
+			<button id="button3" type="button"  onclick="function3()"> Teller: </button>
+			<button id="button4" type="button"  onclick="function4()"> Vis tekst</button>
 			<p id="knapptekst" style="visibility:hidden"> Denne teksten vises fordi knappen ble trykket på. Trykk på den igjen for å skjule denne teksten</p>
 
 		</div>
 
 		<div class="section">
-			<p>Her er noen grunnleggene programmeringsoppgaver dere kanskje klarer å gjøre når programmeringskurset er over:</p>
+			<h1>
+				Oppgaver
+			</h1>
+			<p>
+				Her er noen programmeringsoppgaver dere kanskje klarer å gjøre når programmeringskurset er over. Jobb gjerne sammen og/eller bruk stud.ass. hvis dere trenger hjelp.
+			</p>
+			<p>
+				Det er på ingen måte forventet at dere skal klare alle, eller de fleste av oppgavene ved endt kurs, men det er fint om dere klarer flere og flere etter hvert som dere er i gang med programmeringsfagene deres.
+			</p>
 
-			<h4>Oppgave 1</h4>
+			<h4>
+				Oppgave 1
+			</h4>
 				Skriv et program som printer ut «Hello World» til skjermen.
-			<h4>Oppgave 2</h4>
+			<h4>
+				Oppgave 2
+			</h4>
 				Skriv et program som spør brukeren om navnet deres og printer deretter «Hei "<i>navn</i>"!».
-			<h4>Oppgave 3</h4>
+			<h4>
+				Oppgave 3
+			</h4>
 				Oppdater programmet i oppgave 2 slik at programmet hilser bare hvis det er Bob eller Alice.
-			<h4>Oppgave 4</h4>
+			<h4>
+				Oppgave 4
+			</h4>
 				Skriv et program som spør brukeren om et tall n og printer summen av tallene fra 1 til n.
-			<h4>Oppgave 5</h4>
+			<h4>
+				Oppgave 5
+			</h4>
 				Oppdater programmet i oppgave 4 slik at bare multipler av 3 eller 5 er med i summen. For eksempel 3, 5, 6, 9, 10, 12, 15 for n=17.
-			<h4>Oppgave 6</h4>
+			<h4>
+				Oppgave 6
+			</h4>
+				Skriv et program som tar inn et tall n, og skriver ut alle tall fra 1 til n, mens erstatter multipler av 3 (3,6,9...) med <i>Fizz</i> og multipler av 5 (10,20,25...) med <i>Buzz</i> og multipler av begge (15,30...) med <i>FizzBuzz</i>.
+			<h4>
+				Oppgave 7
+			</h4>
 				Skriv et program som spør brukeren for et tall n og gir brukeren muligheten til å velge mellom regnet sum eller regnet produkt av alle tallene fra 1 til n.
-			<h4>Oppgave 7</h4>
+			<h4>
+				Oppgave 8
+			</h4>
 				Skriv et program som printer ut multiplikasjonstabellen for tallene opptil 12 gangeren.
-			<h4>Oppgave 8</h4>
+			<h4>
+				Oppgave 9
+			</h4>
 				Skriv et program som printer ut primtall opptil 1000.
-			<h4>Oppgave 9</h4>
+			<h4>
+				Oppgave 10
+			</h4>
 				Programmer et "Gjettespill" der brukeren må gjette et hemmelig tall.
 				Etter hver gjetting skal programmet fortelle om tallet var for høyt eller lavt hvis brukeren gjetter feil.
 				Hvis brukeren gjetter riktig tall skal programmet printe ut «Congratulations, you got it right!».
 				I tillegg skal det printes ut antall forsøk før brukeren gjettet riktig tall.
 				Et tall gjettet flere ganger telles som en gang.
-			<h4>Oppgave 10</h4>
+			<h4>
+				Oppgave 11
+			</h4>
 				Skriv et program som printer ut de neste 20 skuddårene.
-			<h4>Oppgave 11</h4>
+			<h4>
+				Oppgave 12
+			</h4>
 				Skriv en funksjon som returnerer det største elementet i en liste bestående av heltall.
-
+			<h4>
+				Oppgave 13
+			</h4>
+			Skriv et program som sjekker om verdiene i en heltallstabell (array) er i sortert stigende rekkefølge (1,2,3...).
+			<h4>
+				Oppgave 14
+			</h4>
+			Skriv et program som kan bytte plass på to verdier i en tabell (array).
+			<h4>
+				Oppgave 15
+			</h4>
+			Bruk programmene du lagde i oppgavene 13 og 14 til å lage en enkel sorteringsalgoritme hvor du bytter plass på to og to verdier slik at den minste kommer foran den største så man til slutt ender opp med en tabell sortert i stigende rekkefølge. Se <a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble Sort</a>. OBS: Avansert oppgave. Ikke meningen at noen skal kunne løse, men fint om man prøver det allikevel.
 		</div>
 		<div class="footer">
 			<div class="footer_content">
