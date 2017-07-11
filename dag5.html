@@ -21,6 +21,54 @@
     <div id="overskrift">
         Dag 5
     </div>
+		<div id="modul9" class="section">
+			<h1>Hva er en nettside?</h1>
+			<p>En nettside kan se veldig enkel ut for sluttbruker av siden, men er nettside kan fort være særdeles kompleks. Tenk på all informasjonen Facebook har lagret om deg, og hvordan
+				det bruker all informasjonen til å vise innhold som er tilpasset til deg. I tillegg så skal applikasjonen holde på ekstremt store mengder av multimedia(bilder/lyd/video).</p>
+
+			<p>For å se på hvordan en nettside er bygd opp så kan vi abstrahere selve modellen av hvordan en applikasjon ser ut. Vi kan da dele modellen opp i tre deler:</p>
+
+			<ul>
+				<li>Klient-side</li>
+				<li>Server-side</li>
+				<li>Database</li>
+			</ul>
+
+			<p><B>Klient-side</B> betyr rett og slett hva klienten - sluttbruker/deg på facebook - oppfatter siden. Man kan også si at dette bestemmes av hvordan HTML, CSS og Javascript har bygd opp
+				visningen av applikasjonen, og bestemmer hva som skal skje når brukeren trykker på den bestemte knappen.</p>
+
+			<p><B>Server-side</B> vil si at den bakenforliggende "logikken" som gjør alle operasjoner som sluttbruker ikke ser. Et eksempel kan være alle beregninger som gjøres når du laster inn facebook-siden
+				din, og bestemmer hvilke innlegg som passer deg best. Eller om du skriver inn et par stikkord i Google, som henter opp millioner av resultater for deg. Her finner man gjerne programmeringsspråk
+				som Java, C++, Python, C# osv.</p>
+
+			<p><B>Database</B> er selve lagringen av all informasjon en applikasjon trenger. Tilbake til facebook eksempelet så kan vi se på det som der navnet ditt, profilbildet ditt, videoen du la
+				ut når du var 13 år gammel og alle innleggene dine er lagret. Her brukes egne database-språk, som for eksempel forskjellige versjoner av SQL (MySQL,SQLite, etc.) og MongoDB.</p>
+
+			<h1>Design</h1>
+			<p>Design er også særdeles viktig når det kommer til nettsider:</p>
+			<ul>
+				<li>Førsteinntrykk: designet kan i stor grad påvirke førsteinntrykket til en bruker, og dermed også påvirke besøksantall siden får.</li>
+				<li>Layout: Riktig layout på en nettside kan gjøre at brukeren synes det er enkelt og naturlig å være på nettsiden</li>
+				<li>Brukervennlighet: vi kan bruke design til å positivt påvirke hvordan besøkende bruker nettsiden</li>
+				<li>En visuelt designfri/designløs nettside kan virke trist, kjedelig og umoderne</li>
+			</ul>
+			<h1>Universell utforming</h1>
+			<p>Universell utforming er et begrep som innebærer at alle sammen skal på lik måte kunne bruke IKT-løsninger. Da tenker man gjerne ofte på folk som har problemer med synet,
+			altså svaksynte/blinde, men også unge, eldre, de med motoriske nedsettelser, funksjonsnedsettelser og personer i stressende situasjoner - for å nevne noen. Når man lager et nettside
+			skal man altså ta hensyn til at <u>alle</u> på lik linje skal ha mulighet til å bruke nettsiden.</p>
+
+			<p>Det er flere verktøy som kan brukes til å lage en universelt utformet nettside. For å eksempel har de aller fleste operativsystem en innebygd skjermleser, rett og slett en robot som kan
+			lese tekst for brukeren. Dette finner man også på iPhone/Android og andre smarttelefoner. Har du en innholdsrik side, hvor bilder spiller en stor rolle i presentasjon av siden din,
+			er det også lagt til rette for at skjermleseren skal kunne "lese" bildet. Dette gjøres ved en "alt" attribut, som du kan se et eksempel på her:</p>
+			<pre>&lt;img src="smiley.png" alt="Picture of a smiley face"&gt;</pre>
+			<p>Verdien som er git til <i>alt</i> her, er hva som leses av skjermleseren. Man har også andre HTML-attributter som kan være til hjelp, som <i>lang</i>:</p>
+			<pre>&lt;p lang="en"&gt;The weather is nice.&lt;/p&gt;</pre>
+			<p>Som forteller skjermleseren hvilket språk teksten skal leses i.</p>
+			<p>Som utvikler kan det være vanskelig å vite om standaren på nettsiden din tilfredstiller krav for å gjøre den brukervennlig for alle grupper. Det finnes da flere verktøy som kan
+				tas i bruk for å sjekke det. En ting er en <a href="http://checkers.eiii.eu">UU-validator</a> som gir deg en score på hvor "universelt utformet" siden din er, samt scores for andre ting.
+			</p>
+
+		</div>
 		<div class="footer">
 			<div class="footer_content">
 				Av

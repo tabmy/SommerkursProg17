@@ -21,9 +21,9 @@
     <div id="overskrift">
         Dag 4
     </div>
-  <div class="section">
+  <div id="modul7" class="section">
     <a href="index.html">Tilbake</a>
-    <h1>Kontrollstrukturer</h1>
+    <h1>Modul 7 - Kontrollstrukturer</h1>
     <p>Kontrollstrukturer kan brukes til mange ting når man programmerer. Kontrollstrukturer vil oppføre seg med hensyn til hva slags verdier variabler har.
     Et enkelt men abstrakt eksempel er "Hvis a, så gjør b". Et mer praktisk eksempel kan være i et lyskrys. Hvis lyset er grønt så kjør, hvis det er rødt så stopp.
     Kontrollstrukturer er ganske likt definert i alle språk, så kjenner du til kontrollstrukturene i Java, så kjenner du til kontrollstrukturer i andre språk.</p>
@@ -44,7 +44,7 @@
 
     <p>Vi kan også bytte verdien til en boolsk verdi med å sette ! (utropstegn) foran.</p>
 
-    <h2>Hvilke kontrollstrukturer har vi?</h2>
+    <h2 id="kontrollstrukturer">Hvilke kontrollstrukturer har vi?</h2>
     <p><i>Prøv gjerne ut noen av disse eksemplene i <a href="https://www.compilejava.net/">denne kompilatoren</a>, så får du mer 'levende' eksempler.</i></p>
     <ul>
       <li>if-else<br>
@@ -74,18 +74,127 @@
     </ul>
   <a href="oppgaverModul7.html">Oppgaver</a>
   </div>
-  		<div class="footer">
-  			<div class="footer_content">
-  				Av
-  				<a href="mailto:s305036@stud.hioa.no?subject=Sommerkurs">
-  					Andreas Strand
-  				</a>
-  				og
-  				<a href="mailto:s237393@stud.hioa.no?subject=Sommerkurs">
-  					Tommy Abelsen
-  				</a>
-  				,	med stor takk til Lars Henrik Nordli
-  			</div>
-  		</div>
+
+  <div id="modul8" class="section">
+      <h1>Modul 8 - Nettsider: Intro og design</h1>
+      <p>Den største forskjellen på nettsider i dag og før er hvordan de oppfører seg. Før i tiden var nettsider bare statisk tekst som ikke endret seg.
+          Nå i dag ser vi at nettsider gjerne er veldig responsive etter hvordan brukeren oppfører seg på siden. Man kaller dermed nettsider i dag for mer dynamiske.
+          Vi har til nå sett på rene programmeringsspråk som vi mest har brukt til å utføre matematiske og logiske operasjoner. Når det kommer til å lage nettsider,
+          sier man ikke at man bruker programmeringsspråk. Man bruker i hovedsak disse tre 'språkene' for å lage nettsider:
+      </p>
+      <ul>
+          <li>HTML - HyperText Markup Language</li>
+          <li>CSS- Cascading Style Sheet</li>
+          <li>Javascript</li>
+      </ul>
+      <h2>HTML</h2>
+      <p>Kort fortalt så kan man si at HTML brukes til å beskrive hvilket innhold som skal være på siden, CSS tar å 'styler' nettsiden og bestemmer hvordan elementer skal vises,
+          mens Javascript brukes til å gjøre nettsiden dynamisk. Når en nettleser laster ned en nettside, så tolker den koden som er i nettsiden, og gir en visuel fremvisning til brukeren.</p>
+      <p>HTML bruker såkalte "tags" for å definere områder i nettsiden. De tre mest grunnleggende tagsene er:</p>
+
+      <ul>
+          <li><B>&lt;html&gt;</B> Viser at her skal all html kode skrives</li>
+          <li><B>&lt;head&gt;</B> "Hodet" til filen. Alt som skrives her er ikke synlig for brukeren. Kan inneholde forhåndsinnstillinger som f.eks. språk, og linke til andre dokumenter som skal brukes i samme fil.</li>
+          <li><B>&lt;body&gt;</B> Sier at her kommer all koden som er synlig for bruker. Tekst/bilder/video etc.</li>
+      </ul>
+
+      <p> Her er et veldig enkelt eksempel på en nettside:</p>
+      <pre id="htmlEks">
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+                &lt;head&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                        &lt;h1&gt;
+                                Overskrift
+                        &lt;/h1&gt;
+                        &lt;p&gt;
+                                Her kan du skrive tekst :)
+                        &lt;/p&gt;
+                &lt;/body&gt;
+          &lt;/html&gt;
+      </pre>
+      <p>På første linje definerer vi at dette dokumentet skal tolkes som et HTML-dokument. Etter det definerer vi at her begynner html koden. Deretter følger "head", som gir utvikler mulighet til å
+          f.eks. legge til elementer som et .css dokument (for å style siden). Deretter har vi "body" som er det faktiske innholdet som sluttbruker vil lese fra. &lt;h1&gt; forteller nettleser
+          som tolker dette dokumentet at her er en overskrift "1". Man kan skrive "h2" eller "h5" osv for mindre overskrivter. &lt;p&gt; skal tolkes som et paragraf.</p>
+
+      <p>Man ser også at man åpner en tag med f.eks. &lt;p&gt;, og avslutter en tag med &lt;/p&gt;.</p>
+
+      <h2>CSS</h2>
+      <p>CSS brukes til å "style" nettsiden. Dette kan være å legge til farger, bestemme hvor på siden elementer skal ligge og justere visning om siden skulle blitt lastet ned på en mobil
+          eller en datamaskin. CSS kan brukes på flere måter; det kan legges inn som en egen tag &lt;style&gt;:</p>
+      <pre>     &lt;style&gt;
+      html {
+          background.color: red;
+          }
+      &lt;/style&gt;</pre>
+      <p>Det kan legges inn som en attribut:</p>
+      <pre>
+          &lt;html style:"background.color: red"&gt;
+      </pre>
+      <p>Eller det kan skrives i en seperat fil, og kobles til inne i &lt;head&gt;-tagen:</p>
+      <pre>
+          &lt;head&gt;
+            &lt;link rel='stylesheet' type='text/css' href='stylesheet.css'&gt;
+          &lt;/head&gt;
+      </pre>
+      <p>Her betyr attributen 'rel' hva slags type rolle dokumentet har, 'type' hva slags type dokumentet er og 'href' er linken til dokumentet.</p>
+
+      <p>Man kan også forhåndsdesigne elementer som &lt;p&gt;, &lt;bodt&gt; og alle andre tagger med css. For eksempel:</p>
+      <pre>p {
+        color:yellow;
+      }</pre>
+      <p>Som sier at alle &lt;p&gt; tagger du skriver i html-dokumentet ditt har skrift med gul farge.</p>
+
+      <p>En annen viktig ting med CSS er å kunne endre posisjon på elementer på siden din. Her er padding, border og margin sentrale begreper:</p>
+      <ul>
+          <li><B>Padding</B> definerer plassen inne i en boks</li>
+          <li><B>Border</B> definerer kantlinjen, kan ses på som rammen til et bilde</li>
+          <li><B>Margin</B> definerer plassen utenfor boksen.</li>
+      </ul>
+      <img src="img/box-model.png" width="100%" style="margin:0.5em;float:right;">
+      <p>Her kan du se et eksempel på hvordan de forskjellige grensene et element i HTML kan ha. Disse grensene vil definere hvordan andre elementer vil plassere seg i forhold til et element.</p>
+
+      <h2>Javascript</h2>
+      <p>Javascript brukes som nevnt til å gjøre siden dynamisk og responsiv til sluttbruker, men hva betyr egentlig dette? Prøv å trykk på følgende knapp, så kommer det opp en pop-up:</p>
+      <button type="button" onclick="popUp()">Trykk på meg!</button>
+      <p>Koden som får denne pop-upen opp er som følgende:</p>
+      <pre>
+          &lt;button type="button" onclick="popUp()"&gt;Trykk på meg!&lt;/button&gt;
+          &lt;script&gt;
+            function popUp(){
+                alert("BØ");
+            }
+          &lt;/script&gt;
+      </pre>
+      <p>Her definerer vi først en button - som vi sier at skal kalle på funksjonen popUp() når knappen trykkes på. En funksjon er et sentralt begrep innen programmering, og inneholder
+          kode som utføres når funksjonen blir kalt på. Javascript-funksjonen popUp() defineres i &lt;script&gt; taggen, men kan også defineres i et seperat dokument og linkes til som
+          nevnt med CSS. I denne funksjonen blir en funksjon som heter "alert()" kalt på. Denne funksjonen er allerede definert, så vi slipper å skrive den koden selv (heldigvis!).</p>
+
+      <a href="oppgaverModul8.html">Oppgaver</a>
+  </div>
   </body>
+  <div class="footer">
+      <div class="footer_content">
+          Av
+          <a href="mailto:s305036@stud.hioa.no?subject=Sommerkurs">
+              Andreas Strand
+          </a>
+          og
+          <a href="mailto:s237393@stud.hioa.no?subject=Sommerkurs">
+              Tommy Abelsen
+          </a>
+          ,	med stor takk til Lars Henrik Nordli
+      </div>
+  </div>
 </html>
+<script>
+    var modul7 = document.getElementById("modul7");
+    var modul8 = document.getElementById("modul8");
+    modul7.style.display = 'block'; //'none' for å ikke vise, 'block' for å vise
+    modul8.style.display = 'block';
+
+    function popUp(){
+        alert("BØ");
+    }
+</script>

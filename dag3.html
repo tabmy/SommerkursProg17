@@ -21,9 +21,9 @@
     <div id="overskrift">
         Dag 3
     </div>
-    <div class="section">
+    <div id="modul6" class="section">
         <a href="index.html">Tilbake</a>
-      <h1>Intro til programmering i Java og PHP</h1>
+      <h1>Modul 6 - Intro til programmering i Java og PHP</h1>
       <h2>Variabler</h2>
       <p>Som nevnt tidligere er programmeringsspråk en måte å fortelle datamaskinen hva som må gjøres for å komme frem til et ønsket resultat. Vi kan si at en oppskrift for å
         lage en brødskive krever at du skal ha:</p>
@@ -75,7 +75,9 @@
       <xmp>boolean erStudent = true;</xmp>
       <p>Ser du nøye på koden over, så er det flere ting man må legge merke til. Det første er semikolon, som settes etter hver instruksjon man skriver, for å
         fortelle datamaskinen at dette er slutten av instruksjonen. Når man deklarerer en 'char' variabel, så må verdien dens settes mellom to enkle 'hermetegn',
-        mens verdien til en String variabel settes mellom to doble "hermetegn". </p>
+        mens verdien til en String variabel settes mellom to doble "hermetegn". En siste ting er bruk av store og små bokstaver ved datatyper. 'String'
+      er den eneste som ikke skrives med en liten bokstav først - dette er fordi String ikke er en primitiv datatype - men et objekt (dette er et konsept som blir
+      introdusert i studiet, så ikke tenk så mye på det nå &#128515;).</p>
       <p>Etter man har deklarert en variabel (gitt den navn, type og evt verdi), så kan man endre på variabelen sin verdi på denne måten:</p>
       <xmp>int a = 2;</xmp>
       <xmp>int b;</xmp>
@@ -111,3 +113,8 @@
 		</div>
   </body>
 </html>
+
+<script>
+    var modul6 = document.getElementById("modul6");
+    modul6.style.display = 'block'; //'none' for å ikke vise, 'block' for å vise
+</script>
