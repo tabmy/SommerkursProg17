@@ -65,23 +65,21 @@
 
     </ul>
     <p>Det første du kan skrive inn er dette:</p>
-    <pre>$tekstFelt = document.getElementById("tekstFelt");
-    $knapp = document.getElementById("knapp");</pre>
+    <pre>   var tekstFelt = document.getElementById("tekstFelt");
+    var knapp = document.getElementById("knapp");</pre>
     <p>Gitt at du har gitt din button id="knapp", og ditt tekstfelt id="tekstFelt". Dette lagrer knappen og tekstfeltet ditt i en variabel,
         slik at du kan bruke dem senere.</p>
     <p>Det neste du kan gjøre er å lage en funksjon under der du deklarerte variablene, fortsatt inne i script-taggen:</p>
     <pre>    function endreTekst() {
-        $knapp.textContent = $tekstFelt.value;
+        var knapp.textContent = tekstFelt.value;
     }
     </pre>
     <p>Samtidig kan du legge inn en attributt i html-taggen for din button som heter onclick. Den skal ha verdien til funksjonen vår "endreTekst()":</p>
     <pre>&lt;button id="knapp" onclick="endreTekst()"&gt;Tekst til knappen&lt;/button&gt;</pre>
     <p>Når du nå trykker på knappen skal teksten til knappen endre seg til teksten du skrev inn i tekstfeltet. Kult?! </p>
-    <input type="text" id="tekstFelt" style="margin-bottom: 6%;">
-    <button onclick="endreTekst()" id="knapp" style="margin-left: 50%;">Button</button>
     <p><i>Husk, det er ansett som bedre praksis å legge CSS og Javascript i egne dokumenter. Vi har lagt det i samme dokument her bare for enkelthetens skyld </i>&#128515;</p>
 
-    <p><B>Ferdig? Gå til <a href="http://codecademy.com/" target="_blank">Codecademy</a> og begynn på Javascript (eller Java)-tutorialen der.</B></p>
+    <p><B>Ferdig med alt? Prøv deg på <a href="sluttTest.html" target="_blank">sluttprøven</a> vår for å se hvordan du ligger an. Du kan også gå til <a href="http://codecademy.com/" target="_blank">Codecademy</a> og begynne på Java/PHP/Javascript-tutorialen der.</B></p>
 </div>
 
 </body>

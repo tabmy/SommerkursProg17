@@ -1,267 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
+
 <head>
+
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
     <style>
-        body {
-            font-family: Open Sans;
+        h2 {
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }
+        input[type="radio"] {
+            margin-left: 4%;
+            margin-bottom:3%;
+        }
+        label {
+            margin-top: 3%;
+            margin-bottom: 3%;
         }
 
-        h1 {
-            text-align: center;
-        }
-
-        #title {
-            text-decoration: underline;
-        }
-
-        #quiz {
-            text-indent: 10px;
-            display:none;
-        }
-
-        .button {
-            border:4px solid;
-            border-radius:5px;
-            width: 40px;
-            padding-left:5px;
-            padding-right: 5px;
-            position: relative;
-            float:right;
-            background-color: #DCDCDC;
-            color: black;
-            margin: 0 2px 0 2px;
-        }
-
-        .button.active {
-            background-color: #F8F8FF;
-            color: #525252;
-        }
-
-        button {
-            position: relative;
-            float:right;
-        }
-
-        .button a {
-            text-decoration: none;
-            color: black;
-        }
-
-        #container {
-            width:50%;
-            margin:auto;
-            padding: 0 25px 40px 10px;
-            background-color: beige;
-            border:4px solid #B0E0E6;
-            border-radius:5px;
-            color: #000000;
-            font-weight: bold;
-            box-shadow: 5px 5px 5px #888;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        #prev {
-            display:none;
-        }
-
-        #start {
-            display:none;
-            width: 90px;
+        div.question {
+            margin-bottom: 20%;
+            margin-top: 20%;
         }
     </style>
-    <title>Dynamic Quiz Project</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
 </head>
+
 <body>
-<div id='container'>
-    <div id='title'>
-        <h1>Slutt-prøve, introkurs programmering</h1>
-    </div>
-    <br/>
-    <div id='quiz'></div>
-    <div class='button' id='next'><a href='#'>Next</a></div>
-    <div class='button' id='prev'><a href='#'>Prev</a></div>
-    <div class='button' id='start'> <a href='#'>Start Over</a></div>
-    <!-- <button class='' id='next'>Next</a></button>
-    <button class='' id='prev'>Prev</a></button>
-    <button class='' id='start'> Start Over</a></button> -->
+
+<div class="section">
+<h1>Sluttest - forberedelseskurs i programmering</h1>
+<p>Dette er en test for å se hvor mye du har fått med deg i løpet av kurset. Husk at dette bare er et forberedelseskurs, og meningen er å introdusere konsepter for nye studenter. Så
+ikke vær bekymret om du synes at spørsmålene var vanskelige!</p>
+<div class="question">
+    <h2>Hva står HTML for og hva brukes det til?</h2>
+    <form>
+    <label>
+        <input type="radio" id="q1A" name="q1">
+        Hypertext Markup Language, presenterer nettsider
+    </label>
+    <label>
+        <input type="radio" id="q1B" name="q1">
+        Hard Text Markup Language, presenterer nettsider
+    </label>
+    <label>
+        <input type="radio" id="q1C" name="q1">
+        High Transfer Mirroring Latency, muliggjør dynamisk innhold i nettsider
+    </label>
+    </form>
+</div><br>
+
+<div class="question">
+    <h2>Hva er en byte?</h2>
+    <label>
+        <input type="radio" id="q2A" name="q2">
+        Har enten verdien 0 eller 1.
+    </label>
+    <label>
+        <input type="radio" id="q2B" name="q2">
+        En betegnelse på 8 byte, som representerer et nummer.
+    </label>
+    <label>
+        <input type="radio" id="q2C" name="q2">
+        Komponenten i en datamaskin som utfører beregninger.
+    </label><br>
+</div><br>
+
+<div class="question">
+    <h2>Hva er forskjellen på CSS og Javascript?</h2>
+    <label>
+        <input type="radio" id="q3A" name="q3">
+        CSS brukes for å presentere nettsider, Javascript for å designe elementer på siden.
+    </label>
+    <label>
+        <input type="radio" id="q3B" name="q3">
+        CSS brukes for å designe elementer på nettsiden, Javascript muliggjør dynamisk innhold.
+    </label>
+    <label>
+        <input type="radio" id="q3C" name="q3">
+        CSS muliggjør dynamisk innhold, Javascript presenterer nettsider
+    </label>
+</div><br>
+
+
+<div class="question">
+    <h2>Hvilke av følgende er rett for å deklarere en tall-variabel i Java?</h2>
+    <label>
+        <input type="radio" id="q4A" name="q4">
+        String tall = 2;
+    </label>
+    <label>
+        <input type="radio" id="q4B" name="q4">
+        boolean tall = 3;
+    </label>
+    <label>
+        <input type="radio" id="q4C" name="q4">
+        byte tall = 53;
+    </label>
+</div><br>
+
+<div class="question">
+    <h2>Hvilke av følgende er IKKE en primitiv datatype?</h2>
+    <label>
+        <input type="radio" id="q5A" name="q5">
+        String
+    </label>
+    <label>
+        <input type="radio" id="q5B" name="q5">
+        long
+    </label>
+    <label>
+        <input type="radio" id="q5C" name="q5">
+        short
+    </label>
+</div><br>
+
+<div class="question">
+    <h2>Hvilke av følgende deklarasjoner av variabler er feil? (Java)</h2>
+    <label>
+        <input type="radio" id="q6A" name="q6">
+        int i = 4;
+    </label>
+    <label>
+        <input type="radio" id="q6B" name="q6">
+        boolean b = "true";
+    </label>
+    <label>
+        <input type="radio" id="q6C" name="q6">
+        char c = 'c'
+    </label>
+</div><br>
+
+<div class="question">
+    <h2>Hva er hovedoppgaven til CPU'en i en datamaskin?</h2>
+    <label>
+        <input type="radio" id="q7A" name="q7">
+        Utfører matematiske og logiske beregninger.
+    </label>
+    <label>
+        <input type="radio" id="q7B" name="q7">
+        Brukes til å lagre programmer som kjører på datamaskinen.
+    </label>
+    <label>
+        <input type="radio" id="q7C" name="q7">
+        Henter ut informasjon om et program og viser det til brukeren.
+    </label>
+</div><br>
+
+<div class="question">
+    <h2>Hva gjør konsoll-kommandoen 'ls'?</h2>
+    <label>
+        <input type="radio" id="q8A" name="q8">
+        Lister alle filer og mapper i mappen du er i.
+    </label>
+    <label>
+        <input type="radio" id="q8B" name="q8">
+        Lister alle kjørende programmer.
+    </label>
+    <label>
+        <input type="radio" id="q8C" name="q8">
+        Lister alle brukere på datamaskinen.
+    </label>
+</div><br>
+
+<div class="question">
+    <h2>Hva er riktig måte å lage en for-loop på i java?</h2>
+    <label>
+        <input type="radio" id="q9A" name="q9">
+        for(int i; i = 0; i = i + 1;){}
+    </label>
+    <label>
+        <input type="radio" id="q9B" name="q9">
+        for(int i; i = 5; i < 10){}
+    </label>
+    <label>
+        <input type="radio" id="q9C" name="q9">
+        for(int i = 10; i >= 0; i--){}
+    </label>
+</div><br>
+
+<div class="question">
+    <h2>Hvordan sjekker man om en variabel 'i' er mindre enn lik 5 i Javascript?</h2>
+    <label>
+        <input type="radio" id="q10A" name="q10">
+        if(i > 5; return true);
+    </label>
+    <label>
+        <input type="radio" id="q10B" name="q10">
+        if(i >= 5){ return true; }
+    </label>
+    <label>
+        <input type="radio" id="q10C" name="q10">
+        if(i <= 5) return true;
+    </label>
+</div><br>
+
+<button onclick="submitAnswers()">Sjekk svar!</button>
 </div>
-
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-<script type="text/javascript" src='questions.json'></script>
-<script type='text/javascript' src='jsquiz.js'></script>
 </body>
+
 </html>
-<script>(function() {
-    var questions = [{
-        question: "What is 2*5?",
-        choices: [2, 5, 10, 15, 20],
-        correctAnswer: 2
-    }, {
-        question: "What is 3*6?",
-        choices: [3, 6, 9, 12, 18],
-        correctAnswer: 4
-    }, {
-        question: "What is 8*9?",
-        choices: [72, 99, 108, 134, 156],
-        correctAnswer: 0
-    }, {
-        question: "What is 1*7?",
-        choices: [4, 5, 6, 7, 8],
-        correctAnswer: 3
-    }, {
-        question: "What is 8*8?",
-        choices: [20, 30, 40, 50, 64],
-        correctAnswer: 4
-    }];
+<script>
 
-    var questionCounter = 0; //Tracks question number
-    var selections = []; //Array containing user choices
-    var quiz = $('#quiz'); //Quiz div object
+    const correctAnswersT = ['A','B','B','C','A','B','A','A','C','C'];
 
-    // Display initial question
-    displayNext();
+    function submitAnswers() {
 
-    // Click handler for the 'next' button
-    $('#next').on('click', function (e) {
-        e.preventDefault();
+        var correctAnswers = checkAnswers();
 
-        // Suspend click listener during fade animation
-        if(quiz.is(':animated')) {
-            return false;
-        }
-        choose();
+       if (correctAnswers < 5){
+           alert("Du fikk " + correctAnswers + " riktige, gå gjennom oppgavesettene igjen, eller prøv deg gjerne på Codecademy eller Sololearn :)");
 
-        // If no user selection, progress is stopped
-        if (isNaN(selections[questionCounter])) {
-            alert('Please make a selection!');
-        } else {
-            questionCounter++;
-            displayNext();
-        }
-    });
+       }else if (correctAnswers < 8){
+           alert("Du fikk " + correctAnswers + " riktige. ");
 
-    // Click handler for the 'prev' button
-    $('#prev').on('click', function (e) {
-        e.preventDefault();
-
-        if(quiz.is(':animated')) {
-            return false;
-        }
-        choose();
-        questionCounter--;
-        displayNext();
-    });
-
-    // Click handler for the 'Start Over' button
-    $('#start').on('click', function (e) {
-        e.preventDefault();
-
-        if(quiz.is(':animated')) {
-            return false;
-        }
-        questionCounter = 0;
-        selections = [];
-        displayNext();
-        $('#start').hide();
-    });
-
-    // Animates buttons on hover
-    $('.button').on('mouseenter', function () {
-        $(this).addClass('active');
-    });
-    $('.button').on('mouseleave', function () {
-        $(this).removeClass('active');
-    });
-
-    // Creates and returns the div that contains the questions and
-    // the answer selections
-    function createQuestionElement(index) {
-        var qElement = $('<div>', {
-            id: 'question'
-        });
-
-        var header = $('<h2>Question ' + (index + 1) + ':</h2>');
-        qElement.append(header);
-
-        var question = $('<p>').append(questions[index].question);
-        qElement.append(question);
-
-        var radioButtons = createRadios(index);
-        qElement.append(radioButtons);
-
-        return qElement;
+       }else if (correctAnswers < 10){
+           alert("Du fikk " + correctAnswers + " riktige, bra jobbet!");
+       }else {
+           alert("Gratulerer, du fikk alle riktige!");
+       }
+       location.reload();
     }
 
-    // Creates a list of the answer choices as radio inputs
-    function createRadios(index) {
-        var radioList = $('<ul>');
-        var item;
-        var input = '';
-        for (var i = 0; i < questions[index].choices.length; i++) {
-            item = $('<li>');
-            input = '<input type="radio" name="answer" value=' + i + ' />';
-            input += questions[index].choices[i];
-            item.append(input);
-            radioList.append(item);
+    function checkAnswers(){
+        var correctAnswers = 0;
+
+        for(var i = 1; i < 11; i++) {
+            console.log("q" + i.toString() + '' + correctAnswersT[i]);
+            if (document.getElementById("q" + i.toString() + correctAnswersT[i - 1]).checked)
+                correctAnswers++;
         }
-        return radioList;
+        return correctAnswers;
     }
-
-    // Reads the user selection and pushes the value to an array
-    function choose() {
-        selections[questionCounter] = +$('input[name="answer"]:checked').val();
-    }
-
-    // Displays next requested element
-    function displayNext() {
-        quiz.fadeOut(function() {
-            $('#question').remove();
-
-            if(questionCounter < questions.length){
-                var nextQuestion = createQuestionElement(questionCounter);
-                quiz.append(nextQuestion).fadeIn();
-                if (!(isNaN(selections[questionCounter]))) {
-                    $('input[value='+selections[questionCounter]+']').prop('checked', true);
-                }
-
-                // Controls display of 'prev' button
-                if(questionCounter === 1){
-                    $('#prev').show();
-                } else if(questionCounter === 0){
-
-                    $('#prev').hide();
-                    $('#next').show();
-                }
-            }else {
-                var scoreElem = displayScore();
-                quiz.append(scoreElem).fadeIn();
-                $('#next').hide();
-                $('#prev').hide();
-                $('#start').show();
-            }
-        });
-    }
-
-    // Computes score and returns a paragraph element to be displayed
-    function displayScore() {
-        var score = $('<p>',{id: 'question'});
-
-        var numCorrect = 0;
-        for (var i = 0; i < selections.length; i++) {
-            if (selections[i] === questions[i].correctAnswer) {
-                numCorrect++;
-            }
-        }
-
-        score.append('You got ' + numCorrect + ' questions out of ' +
-            questions.length + ' right!!!');
-        return score;
-    }
-})();</script>
+</script>
