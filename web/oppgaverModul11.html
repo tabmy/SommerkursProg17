@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../img/index.ico">
+      <title>
+          Oppgaver til Modul 11
+      </title>
+      <style>
+          ul{
+              list-style: lower-alpha;
+          }
+          li {
+              margin-bottom: 6%;
+          }
+      </style>
+  </head>
+  <body>
+    <div class="header">
+			<div class="header_content">
+				<a href="../index.html">Hjem</a>
+				<a href="dag1.html">Dag 1</a>
+				<a href="dag2.html">Dag 2</a>
+				<a href="dag3.html">Dag 3</a>
+				<a href="dag4.html">Dag 4</a>
+				<a href="dag5.html">Dag 5</a>
+			</div>
+		</div>
+    <div id="overskrift">Oppgavesett 11 - Hva er en nettisde?</div>
+    <div class="section">
+        <h2>1)</h2>
+        <ul>
+            <li>Hva er forskjell på client-side, server-side og database? Bruk nettet til å finne ut hvordan "backend" og "frontend" relaterer til dette.</li>
+            <li>Når ville du ikke trengt en server-side og en database ved utvikling av en nettside?</li>
+            <li>Tror du nettsidene som er relatert til kurset inneholder en server-side og en database? Hvorfor/hvorfor ikke?</li>
+            <li>Du skal lage en nettside for en bedrift. De skal holde oversikt over hvem som går inn og ut av bygget deres. Gi eksempler på hvilke programmeringsspråk du kan bruke i hver del;
+            klient-side, server-side og database.</li>
+        </ul>
+        <h2>2)</h2>
+        <ul>
+            <li>Hvorfor er det viktig med UU (Universell Utforming)?</li>
+            <li>Hvordan bruker en svaksynt person en nettside? Hva er viktig for en utvikler for å tilrettelegge for at dette blir så lett som mulig for en svaksynt?</li>
+            <li>Gå tilbake til nettsiden du lagde i går (modul 8). Argumenter for om denne siden er brukervennlig eller ikke.</li>
+            <li>Bruk en <a href="https://validator.w3.org/">UU-validator</a> til å sjekke din score for siden du lagde i går. Forsøk å gjøre nødvendige endringer for å få maks score. Du kan laste opp filer i de fleste UU-validatorer.</li>
+        </ul>
+
+
+        <p><i><B>NB! Det er anbefalt at du har gjort alle html/css/javascript oppgavene fra forrige oppgavesett før du går videre.</B></i></p>
+        <h2>3)</h2>
+        <ul>
+        <p>Nå skal vi går videre med å utvikle hjemmesiden vår, med litt mer fokus på javascript. Vi tar utgangspunkt i at du fortsatt har siden fra forrige modul tilgjenglig. Gjør obs på at noen
+        av disse oppgavene kan ha litt vanskelighetsgrad på seg, så sitt gjerne to- og to og prøv dere frem sammen. &#128515;</p>
+
+        <p><i>Nå skal vi begynne å leke litt med Javascript med en knapp og et tekstfelt. Vi skal kunne skrive noe i tekstfeltet, og
+            sende den stringen inn i knappen:</i></p>
+
+        <li>For å legge til en knapp kan du bruke denne koden:<pre>&lt;button id="knapp"&gt;Tekst til knappen&lt;/button&gt;</pre>Finn ut hvordan du kan
+            plassere midt på siden.</li>
+
+        <li>Opprett et tekstfelt ved hjelp av denne koden: <pre>&lt;input type="text" id="tekstFelt"&gt;</pre>
+            Legg merke til attributten "id". Den skal vi bruke videre når vi legger til Javascript. Legg også inn en id i knappen du har opprettet.</li>
+
+        <li>Nederst i html-dokumentet ditt kan du opprette en ny tag &lt;script type="text/javascript"&gt;&lt;/script&gt;. Her kan man skrive Javascript.</li>
+
+        </ul>
+        <p>Det første du kan skrive inn er dette:</p>
+        <pre>   var tekstFelt = document.getElementById("tekstFelt");
+        var knapp = document.getElementById("knapp");</pre>
+        <p>Gitt at du har gitt din button id="knapp", og ditt tekstfelt id="tekstFelt". Dette lagrer knappen og tekstfeltet ditt i en variabel,
+            slik at du kan bruke dem senere.</p>
+        <p>Det neste du kan gjøre er å lage en funksjon under der du deklarerte variablene, fortsatt inne i script-taggen:</p>
+        <pre>    function endreTekst() {
+            var knapp.textContent = tekstFelt.value;
+        }
+        </pre>
+        <p>Samtidig kan du legge inn en attributt i html-taggen for din button som heter onclick. Den skal ha verdien til funksjonen vår "endreTekst()":</p>
+        <pre>&lt;button id="knapp" onclick="endreTekst()"&gt;Tekst til knappen&lt;/button&gt;</pre>
+        <p>Når du nå trykker på knappen skal teksten til knappen endre seg til teksten du skrev inn i tekstfeltet. Kult?! </p>
+        <p><i>Husk, det er ansett som bedre praksis å legge CSS og Javascript i egne dokumenter. Vi har lagt det i samme dokument her bare for enkelthetens skyld </i>&#128515;</p>
+
+        <p><B>Ferdig med alt? Prøv deg på <a href="sluttTest.html" target="_blank">sluttprøven</a> vår for å se hvordan du ligger an. Du kan også gå til <a href="http://codecademy.com/" target="_blank">Codecademy</a> og begynne på Java/PHP/Javascript-tutorialen der.</B></p>
+    </div>
+
+  </body>
+
+  <div class="footer">
+      <div class="footer_content">
+          Av
+          <a href="mailto:s305036@stud.hioa.no?subject=Sommerkurs">
+              Andreas Strand
+          </a>
+          og
+          <a href="mailto:s237393@stud.hioa.no?subject=Sommerkurs">
+              Tommy Abelsen
+          </a>
+          , med stor takk til Lars Henrik Nordli
+      </div>
+  </div>
+</html>
