@@ -201,6 +201,39 @@
         </li>
       </ul>
       <h2>
+        Pseudokode
+      </h2>
+      <p>
+        Et "språk" det er viktig å nevne er <a href="#">pseudokode</a>.
+        Pseudokode er ikke et ekte programmeringsspråk, men heller en måte vi mennesker kan beskrive løsningen av et problem eller stegene i en algoritme enkelt og forståelig.
+      </p>
+      <p>
+        Når man skriver pseudokode er det ofte vanlig å utelate spesifikke detaljer som er "åpenbare" for å øke lesbarhet uten å miste informasjon.
+      </p>
+      <p>
+        Eksempel på pseudokode fra wikipedia:
+      </p>
+      <pre>
+        <'variabel'> = <'uttrykk'>
+
+        hvis <'betingelse'>
+            gjør noe;
+        ellers
+            gjør noe annet;
+
+        mens <'betingelse'>
+            gjør noe;
+
+        for <'variabel'> fra <'første verdi'> til <'siste verdi'> med <'steglengde'>
+            gjør noe med variabelen;
+
+        funksjon <'funksjonsnavn'>(<'argumenter'>)
+            gjør noe med argumentene;
+            returner noe;
+
+        <'funksjonsnavn'>(<'argumenter'>)    // Funksjonskall
+      </pre>
+      <h2>
         Kompilatoren
       </h2>
       <p>
@@ -270,23 +303,82 @@
       <p>
         En <strong>transpilator</strong>, også kalt <a href="https://en.wikipedia.org/wiki/Source-to-source_compiler">kilde-til-kilde kompilator</a>, er en kompilator som oversetter fra et språk til et annet (i omtrentlig lik abstraksjonsnivå).
       </p>
+      <a href="oppgaverModul5.html" style="font-size:2em;">Oppgaver til modul 5</a>
     </div>
     <div class="section">
       <h1>
         Modul 6 - Hello World
       </h1>
+      <p>
+        Et <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello World</a> program brukes ofte for å vise et kodeeksempel, eller et testprogram.
+        Et slikt program inneholder det absolutte minimum av kode som er nødvendig for at programmet skal kjøre, og "Hello, World" skrives ut til konsoll eller annet sted på skjerm.
+      </p>
+      <p>
+        Hello World-program blir ofte veldig små, siden det sjeldent er mye som skal til for å skrive til skjerm. Det er derfor mest brukt for å illustrere den grunnleggende syntaksen programmeringsspråket har.
+      </p>
+      <p>Eksempel i C og Java:</p>
+      <pre>
+        // C
+        #include <stdio.h>
+
+          main( )
+          {
+                  printf("hello, world\n");
+          }
+      </pre>
+      <pre>
+        // Java
+        public static void main(String[] args){
+          System.out.println("Hello, World!");
+        }
+      </pre>
+      <h2>
+        IDE
+      </h2>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> står for <strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment.
+      </p>
+      <p>
+        IDE-er er enkelt fortalt et program som gjør det lettere å programmere i. De inneholder som oftest en tekst-/kildekodeeditor med syntaksmerking, autofullføring av setninger, makroer (funksjoner som skriver forhåndsdefinert kode for deg), muligheter for å kompilere og kjøre programmer direkte og en debugger som enkelt lar deg gå igjennom koden din og sjekke om og hvor du har bugs.
+      </p>
+      <h2>
+        Noen IDEer
+      </h2>
+      <p>
+        Her er en liste med noen IDE-er:
+        <ul>
+          <li><a href="https://www.eclipse.org/">Eclipse</a>, hovedsakelig for Java.</li>
+          <li><a href="https://netbeans.org/">NetBeans</a>, hovedsakelig for Java.</li>
+          <li><a href="https://www.jetbrains.com/idea/">IntelliJ</a>, hovedsakelig for Java.</li>
+          <li><a href="https://www.jetbrains.com/phpstorm/">PhpStorm</a>, hovedsakelig for PHP</li>
+          <li><a href="https://www.jetbrains.com/webstorm/">WebStorm</a>, hovedsakelig for JavaScript.</li>
+          <li><a href="https://www.jetbrains.com/pycharm/">PyCharm</a>, hovedsakelig for Python.</li>
+          <li><a href="https://atom.io/">Atom</a>, en teksteditor med masse konfigurasjonsmuligheter.</li>
+        </ul>
+      </p>
+      <p>
+        Det er fullt mulig å programmere, lage og kjøre kode uten å bruke IDE.
+        Det er faktisk <strong>anbefalt</strong> for nybegynnere å benytte seg av teksteditorer og terminal/konsoll i starten, så man lærer seg det grunnleggende uten å bruke for mye hjelp i starten.
+      </p>
+      <a href="oppgaverModul6.html" style="font-size:2em;">Oppgaver til modul 6</a>
     </div>
     <div class="section">
       <h1>
         Modul 7 - Terminal/Konsoll
       </h1>
+      <a href="oppgaverModul7.html" style="font-size:2em;">Oppgaver til modul 7</a>
     </div>
     <div id="modul8" class="section">
-        <a href="index.html">Tilbake</a>
-      <h1>Modul 8 - Intro til programmering i Java og PHP</h1>
-      <h2>Variabler</h2>
-      <p>Som nevnt tidligere er programmeringsspråk en måte å fortelle datamaskinen hva som må gjøres for å komme frem til et ønsket resultat. Vi kan si at en oppskrift for å
-        lage en brødskive krever at du skal ha:</p>
+      <h1>
+        Modul 8 - Intro til programmering i Java og PHP
+      </h1>
+      <h2>
+        Variabler
+      </h2>
+      <p>
+        Som nevnt tidligere er programmeringsspråk en måte å fortelle datamaskinen hva som må gjøres for å komme frem til et ønsket resultat. Vi kan si at en oppskrift for å
+        lage en brødskive krever at du skal ha:
+      </p>
       <ul>
         <li>1 stk brød</li>
         <li>7.6 gram smør</li>
@@ -356,7 +448,7 @@
       <xmp>$a = 10;</xmp>
       <xmp>$b = $a + 2;</xmp>
       <xmp>$navn = "Andreas"</xmp>
-        <a href="oppgaverModul8.html">Oppgaver</a>
+      <a href="oppgaverModul8.html" style="font-size:2em;">Oppgaver til modul 8</a>
     </div>
 		<div class="footer">
 			<div class="footer_content">
