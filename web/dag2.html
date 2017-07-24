@@ -46,7 +46,7 @@
         <a href="https://en.wikipedia.org/wiki/ENIAC">ENIAC</a> skal ha klart å regne ut baner som tok et menneske 20 timer å regne ut på knappe 30 sekunder.
         Det sier litt om hvor effektivt datamaskiner kan løse matematiske utregninger.
       </p>
-      <img src="../img/ENIAC.png" alt="ENIAC" width="60%" style="float:right; margin-left:1em">
+      <img src="../img/ENIAC.png" title="ENIAC" alt="Bilde av ENIAC" width="60%" style="float:right; margin-left:1em">
       <p>
         Hva Turing-kompletthet er kan du lese mer om <a href="https://en.wikipedia.org/wiki/Turing_completeness">her</a>.
         Men i korte trekk betyr det at den kan utføre alt en standard programmerbar datamaskin kan gjøre.
@@ -61,6 +61,7 @@
         Tidlige datamaskiner brukte vakuumrør til å flytte elektriske signaler fra ett sted i maskinen til et annet.
         Maskiner var også avhengige av at mennesker manuelt styrte strømmen dit den skulle.
       </p>
+      <img src="../img/eniac_svitsj.jpg" alt="Mann som fysisk endrer på en blokk med svitsjer for å programmere" width="60%" title="ENIAC-svitsj" style="margin:0.5em;float:right;">
       <p>
         Så til tross for at datamaskinene var programmerbare og raske til å regne ut matematiske problemer, så var det fortsatt en del fysisk menneskelig innblanding i bruk av datamaskinene.
       </p>
@@ -72,7 +73,7 @@
         Ingeniører hadde klart å lage en mikroskopisk versjon av de hittil store prosessorene.
         <a href="https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html">Intel skriver selv</a> at deres første <a href="https://en.wikipedia.org/wiki/Microprocessor">mikroprosessor</a>, <a href="https://en.wikipedia.org/wiki/Intel_4004">Intel 4004</a> skal ha hatt en størrelse på en fingernegl og en like stor datakraft som den første datamaskinen, som tok opp et helt rom (ENIAC).
       </p>
-      <img src="../img/Intel_C4004.png" alt="Intel C4004" width="60%" style="float:right;margin-left:1em;">
+      <img src="../img/Intel_C4004.png" title="Intel C4004" alt="Bilde av en mikroprosessor (Intel C4004)" width="60%" style="float:right;margin-left:1em;">
       <p>
         De nye prosessorene kunne kjøre programmer slik de eldre, store prosessorene kunne.
         De kunne også lagre informasjon og håndtere data helt selv.
@@ -276,6 +277,292 @@
         <p>
           Binærtall representerer også instruksjoner og kommandoer, og alt kode som er programmert blir <i>kompilert</i> og gjort om til 0 og 1 (meget simplifisert)</p>
         <a href="oppgaverModul4.html" style="font-size:2em;">Oppgaver til modul 4</a>
+      </div>
+      <div class="section">
+        <h1>
+          Modul 5 - Programmeringsspråk
+        </h1>
+        <h2>
+          Språk
+        </h2>
+        <img src="../img/books.jpg" width="30%" style="margin:0.5em;float:right;" alt="En stabel med bøker om diverse programmeringsspråk" title="Bøker om programmering">
+        <p>
+          Et <a href="https://en.wikipedia.org/wiki/Programming_language">programmeringspråk</a> er et formelt språk med gitte regler som bestemmer et sett med instruksjoner som kan benyttes for å oppnå diverse mål.
+          Enklere sagt så er det et språk, like fullverdig norsk og engelsk, med egne regler for bygging av "setninger" (gyldig kode).
+        </p>
+        <p>
+          Det finnes en <a href="https://en.wikipedia.org/wiki/History_of_programming_languages">lang rekke med ulike programmeringsspråk</a>.
+          Noen vil kalle de forskjellige typene for <strong>dialekter</strong> istedenfor <i>språk</i>, gjerne fordi de fleste programmeringsspråk er veldig like og alle har som formål å snakke <u>datamaskinens språk</u>.
+        </p>
+        <p>
+          De ulike programmeringsspråk har gjerne sine egne foretrukne brukområder og alle har hver sine fordeler og ulemper.
+          Eksempler på dette kan være hastighet, størrelse, kompleksitet og brukervennlighet.
+        </p>
+        <h2>
+          Historie
+        </h2>
+        <img src="../img/hullkort.jpg" alt="To stabler med hullkort av forskjellige typer" title="Hullkort" width="30%" style="margin:0.5em;float:right;">
+        <p>
+          De tidligste datamaskinene ble ikke programmert ved bruk av tekst-språk slik de aller fleste språk i dag er.
+          For eksempel så ble ENIAC programmert ved hjelp av fysiske svitsjer.
+          Det kunne ta dager for å koble opp svitsjene og kablene i korrekt konfigurasjon, og dette etter at selve "programmet" var skrevet ferdig på papir.
+        </p>
+        <p>
+          Det har også vært brukt <a href="https://en.wikipedia.org/wiki/Punched_card">hullkort</a> flittig frem til midten av 70-tallet.
+          Hullkort er enkelt forklart et papirkort med instruksjoner gitt i form av en rekke hull på spesifikke plasser på kortet.
+          Hullkort ble blant annet brukt til lagring av informasjon og gi instruksjoner for å programmere en maskin.
+        </p>
+        <img src="../img/fortran.jpg" alt="FORTRAN-hullkort med verdier fra 0 til 80." title="FORTRAN-hullkort" width="60%" style="margin:0.5em;">
+        <h2>
+          Høynivå vs. lavnivå språk
+        </h2>
+        <p>
+          Vi kategoriserer ofte programmeringsspråk som <i><a href="https://en.wikipedia.org/wiki/High-level_programming_language">høynivåspråk</a></i> eller <i><a href="https://en.wikipedia.org/wiki/Low-level_programming_language">lavnivåspråk</a></i>.
+          Kategoriene <strong>høy</strong> og <strong>lav</strong> sier vi at beskriver <strong>abstraksjon</strong>snivået.
+          Med andre ord så beskriver nivåene hvor langt "unna" vi er fra maskinkode, og hvor mye vi får "tilgang til" fra språket alene.
+        </p>
+        <h2>Abstraksjon</h2>
+        <em>
+          "Abstraksjon, (til abstrahere), noe som bare er tenkt og ikke-anskuelig, som mangler konkret og sansbar virkelighet." - Store Norske Leksikon
+        </em>
+        <p>
+          All kode, uansett programmeringsspråk, må en eller annen gang ende opp helt nederst i maskinen (impulsnivå).
+          <a href="https://en.wikipedia.org/wiki/Abstraction_(software_engineering)">Abstraksjons</a>nivåene skiller på antall steg, altså hvor "lang vei", det er mellom språket selv og impulsnivået, eller maskinkode.
+        </p>
+        <p>
+          Noen <strong>generaliseringer</strong>:
+          <ul>
+            <li>
+              Jo lavere nivå et språk er, desto raskere kan programmet kjøre.
+            </li>
+            <li>
+              Jo høyere nivå et språk er, desto lettere er det å lese og lære å lage/programmere i.
+            </li>
+          </ul>
+        </p>
+        <h2>Eksempel på språk og abstraksjonsnivåer</h2>
+        <p>
+          <strong>SQL</strong> - deklarativt, nesten som talespråk (<i>ikke egentlig programmeringsspråk</i>).
+          <pre>Eks:
+            SELECT * FROM employees WHERE name="john"
+          </pre>
+        </p>
+        <p>
+          <strong>Python / Ruby</strong> - lar deg se bort fra detaljene som Java/C++ osv.
+          <pre>Eks:
+            number1 = 20
+            number2 = 10
+            sum = number1 + number2
+          </pre>
+        </p>
+        <p>
+          <strong>Java / C#</strong> - en god del abstraksjon, har f.eks. ikke direkte tilgang til RAM.
+          <pre>Eks:
+            public class Calculator {
+              public static void main(String[] args) {
+                int number1 = 20;
+                int number2 = 10;
+                int sum = number1 + number2;
+              }
+            }
+          </pre>
+        </p>
+        <p>
+          <strong>C++</strong> - de samme mulighetene som C, men kan abstrahere mer.
+        </p>
+        <p>
+          <strong>C</strong> - kan abstrahere, men har direkte tilgang til RAM.
+          <pre>Eks:
+            #include <stdio.h>
+            int main(){
+            int number1 = 20;
+            int number2 = 10;
+            int sum = number1 + number2;
+            return 0;
+            }
+          </pre>
+        </p>
+        <p>
+          <strong>Assembly</strong> - skriver instruksjoner/kommandoer til prosessoren.
+          <pre>Eks:
+            IMM R0, 0x80
+            LOAD R0, R0
+            IMM R1, 0x84
+            LOAD R1, R1
+            IMM R2, 0x0
+            IMM R3, 0x4
+            IMM R4, 0x0
+            IMM R5, 0x1
+            STORE R0, R2
+            ADD R0, R0, R3
+            ADD R4, R4, R5
+            BNE 0x20, R4, R1
+          </pre>
+        </p>
+        <p>
+          <strong>Maskinkode</strong> - skriver så å si impulser til datamaskinen.
+          <pre>Eks:
+            0x 60 00 00 80
+            0x A4 00 00 00
+            0x 60 01 00 84
+            0x A4 01 01 00
+            0x 60 02 00 00
+            0x 60 03 00 04
+            0x 60 04 00 00
+            0x 60 05 00 01
+            0x 08 00 00 02
+            0x 20 00 00 03
+            0x 20 04 04 05
+          </pre>
+        </p>
+        <h2>
+          Java - et populært språk
+        </h2>
+        <img src="../img/java_logo.png" alt="Logoen til programmeringsspråket Java" title="Java logo" width="10%" style="margin:0.5em;float:right;">
+        <p>
+          Noen faktorer til at <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a> er blant de mest populære språk i dag er:
+          <ul>
+            <li>
+              Java er en god blanding mellom enkelthet i å lese/lære/lage og hastighet.
+            </li>
+            <li>
+              Java er et godt etablert og vedlikeholdt språk (det er eid og vedlikeholdt av Oracle, et privat firma)
+            </li>
+            <li>
+              Java er et sikkert språk - det har en "vakt" mellom programmet og datamaskinen (<a href="https://en.wikipedia.org/wiki/Java_virtual_machine">JVM</a>)
+            </li>
+            <li>
+              Java skrives likt og fungerer likt på alle platformer (OS/hardware)
+            </li>
+          </ul>
+        </p>
+        <h2>
+          Noen andre programmeringsspråk
+        </h2>
+        <ul>
+          <li>
+            <strong>Objective-C</strong> - tidligere språk for OSX, iOS og apper, iPhone/iPad.
+          </li>
+          <li>
+            <strong>Swift</strong> - det nye og nåværende språk for iOS og apper, iPhone/iPad.
+          </li>
+          <li>
+            <strong>PHP</strong> - brukes på nettsider/nettløsninger.
+          </li>
+          <li>
+            <strong>JavaScript</strong> - brukes også på nettsider/nettløsninger.
+          </li>
+          <li>
+            <strong>R</strong> - brukes mye i statistikk og analyse i og mot datasett.
+          </li>
+          <li>
+            <strong>Matlab</strong> - brukes i matematisk sammenheng, grafer, likninger etc.
+          </li>
+        </ul>
+        <h2>
+          Pseudokode
+        </h2>
+        <p>
+          Et "språk" det er viktig å nevne er <a href="#">pseudokode</a>.
+          Pseudokode er ikke et ekte programmeringsspråk, men heller en måte vi mennesker kan beskrive løsningen av et problem eller stegene i en algoritme enkelt og forståelig.
+        </p>
+        <p>
+          Når man skriver pseudokode er det ofte vanlig å utelate spesifikke detaljer som er "åpenbare" for å øke lesbarhet uten å miste informasjon.
+        </p>
+        <p>
+          Eksempel på pseudokode fra wikipedia:
+        </p>
+        <pre>
+          &lt;variabel> = &lt;uttrykk>
+
+          hvis &lt;betingelse>
+              gjør noe;
+          ellers
+              gjør noe annet;
+
+          mens &lt;betingelse>
+              gjør noe;
+
+          for &lt;variabel> fra &lt;første verdi> til &lt;siste verdi> med &lt;steglengde>
+              gjør noe med variabelen;
+
+          funksjon &lt;funksjonsnavn>(&lt;argumenter>)
+              gjør noe med argumentene;
+              returner noe;
+
+          &lt;funksjonsnavn>(&lt;argumenter>)    // Funksjonskall
+        </pre>
+        <h2>
+          Kompilatoren
+        </h2>
+        <p>
+          En <a href="https://en.wikipedia.org/wiki/Compiler">kompilator</a> er et <strong>program</strong> som <strong>gjør om</strong> kode skrevet i et programmeringsspråk (kildekode/kildespråk) til samme kode i et annet programmeringsspråk (målkode/målspråk).
+          Det vil med andre ord bety at det er et program som "oversetter", eller <strong>kompilerer</strong>, programmeringen gjort av mennesker (kildekode) til kode som datamaskinen forstår.
+        </p>
+        <p>
+          De aller fleste programmeringsspråk, utenom direkte maskinkodeprogrammering/binærkode, har en kompilator.
+        </p>
+        <p>
+          Kompilatoren kompilerer <i>hele koden</i> før et program kan kjøres.
+        </p>
+        <h2>
+          Kompilatorens oppgaver
+        </h2>
+        <p>
+          Kompilatorens oppgaver er i all hovedsak å programvare <strong>kjørbare / gjennomførbare</strong> for datamaskinene.
+          Dette innebærer blant annet å oversette fra et høyere-nivå-språk til et lavere-nivå-språk, eksempelvis assembly eller maskinkode.
+        </p>
+        <p>
+          <strong>For programmereren</strong>
+          <ul>
+            <strong>Melde om:</strong>
+            <li>
+              Noe har gått galt (error/feil)
+            </li>
+            <li>
+              Noe kommer til å gå galt (ugyldig kode)
+            </li>
+            <li>
+              Syntaksfeil (feil måte koden er skrevet på)
+            </li>
+          </ul>
+          <strong>Gi tips</strong> for å rette opp fremtidige feil.
+          Og <strong>henvise til dokumentasjon</strong>.
+        </p>
+        <p>
+          <strong>For datamaskinen</strong>
+          <ul>
+            <strong>Fortelle:</strong>
+            <li>
+              Hva maskinen skal gjøre
+            </li>
+            <li>
+              Når maskinen skal gjøre det
+            </li>
+            <li>
+              Hvilken rekkefølge den skal gjøre hva
+            </li>
+          </ul>
+          Eks. fortelle om binærtallet er toerkomplement eller ikke
+        </p>
+        <h2>
+          Interpreter
+        </h2>
+        <p>
+          En oversetter, eller tolk, (eng. <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)">interpreter</a>) fungerer mye på samme måte som en kompilator gjør.
+          Men hovedforskjellen er at en interpreter leser inn og <i>tolker</i> én og <strong>én linje</strong> om gangen, i motsetning til hele koden samtidig.
+          Når koden blir tolket, blir den gjerne kjørt og utført linjevis etter hvert nedover i koden.
+        </p>
+        <h2>
+          Andre typer
+        </h2>
+        <p>
+          En <a href="https://en.wikipedia.org/wiki/Decompiler">dekompilator</a> oversetter fra lavnivå-språk, eller en kjørbar prografil, til høynivå-språk.
+        </p>
+        <p>
+          En <strong>transpilator</strong>, også kalt <a href="https://en.wikipedia.org/wiki/Source-to-source_compiler">kilde-til-kilde kompilator</a>, er en kompilator som oversetter fra et språk til et annet (i omtrentlig lik abstraksjonsnivå).
+        </p>
+        <a href="oppgaverModul5.html" style="font-size:2em;">Oppgaver til modul 5</a>
       </div>
   	<div class="footer">
   		<div class="footer_content">
