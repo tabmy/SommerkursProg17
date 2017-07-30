@@ -71,6 +71,32 @@
 				tas i bruk for å sjekke det. En ting er en <a href="https://validator.w3.org/" target="_blank">UU-validator</a> som gir deg en score på hvor "universelt utformet" siden din er, samt scores for andre ting.
 			</p>
 
+			<h2>Javascript</h2>
+			<p>Javascript brukes som nevnt til å gjøre siden dynamisk og responsiv til sluttbruker, men hva betyr egentlig dette? Prøv å trykk på følgende knapp, så kommer det opp en pop-up:</p>
+			<button type="button" onclick="popUp()">Trykk på meg!</button>
+			<p>Koden som får denne pop-upen opp er som følgende:</p>
+			<pre>
+          &lt;button type="button" onclick="popUp()"&gt;Trykk på meg!&lt;/button&gt;
+          &lt;script&gt;
+            function popUp(){
+                alert("BØ");
+            }
+          &lt;/script&gt;
+      </pre>
+			<p>Her definerer vi først en button - som vi sier at skal kalle på funksjonen popUp() når knappen trykkes på. En funksjon er et sentralt begrep innen programmering, og inneholder
+				kode som utføres når funksjonen blir kalt på. Javascript-funksjonen popUp() defineres i &lt;script&gt; taggen, men kan også defineres i et seperat dokument og linkes til som
+				nevnt med CSS. I denne funksjonen blir en funksjon som heter "alert()" kalt på. Denne funksjonen er allerede definert, så vi slipper å skrive den koden selv (heldigvis!).</p>
+
+			<h2>Variabler i Javascript</h2>
+			<p>Variabler i Javascript defineres litt annerledes enn i f.eks. Java, og man ser at Javascript er et mer 'høynivåspråk' enn det Java er. En variabel kan bli definert med nøkkelordene
+				'var' eller 'const':</p>
+			<pre>
+          var variabel = "hei";
+          var tall = 2;
+          const navn = "Andreas";
+      </pre>
+			<p>'var' betyr rett og slett at dette er en variabel - at verdien kan endres. 'const' betyr da det motsatte, at verdien ikke kan endres etter denne har blitt satt.</p>
+
 			<a href="oppgaverModul9.html" style="font-size:2em;">Oppgaver til modul 9</a>
 		</div>
 		<div class="footer">
@@ -88,3 +114,10 @@
 		</div>
   </body>
 </html>
+
+<script>
+    function popUp(){
+        alert("BØ");
+    }
+</script>
+
