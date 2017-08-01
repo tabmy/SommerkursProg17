@@ -71,14 +71,26 @@
 		<li>Lagre fornavnet ditt i en variabel, og etternavnet i en annen. Skriv så ut begge samtidig, med et mellomrom.</li>
 		<li>Istedenfor å skrive <xmp>int a = 10;</xmp><xmp>a = a + 2;</xmp>så kan du enklere skrive <xmp>a += 2</xmp>
 			Dette gjelder også for de andre matematiske operasjonene. Gang sammen to int-variabler ved å bruke denne metoden. Skriv deretter ut resultatet.</li>
-		<li>Prøv å legg inn denne for-loopen skrevet i PHP inn i kompilatoren gitt over. Hva skjer? Fungerer det, hvorfor/hvorfor ikke?
-			<pre>       for($i = 0; $i < 10; $i++){
-
-        }</pre></li>
+		<li>Prøv å legg inn denne PHP-koden inn i kompilatoren gitt over. Hva skjer? Fungerer det, hvorfor/hvorfor ikke?
+			<pre>
+				$i = "Hello world!;
+				echo $i;
+			</pre></li>
 		<li>Prøv å adder en heltallsvariabel og en desimaltallvariabel sammen, og lagre resultatet i en ny 'int' variabel. Hva skjer?
 			Kan du forklare hvorfor?</li>
 		<li>Lag en variabel av type 'byte', og gi denne verdien 127. På neste linje øker du verdien til denne variabelen med 100, skriv så ut verdien.
 			Hva får du som resultat? Hvorfor?</li>
+		<li><b>Utfordring: </b> her får du en kodesnutt som viser hvordan brukeren kan skrive inn input til et Java-program, for så å printe ut inputen.
+
+			<pre>
+	Scanner reader = new Scanner(System.in);
+	System.out.println("Enter a number: ");
+	int n = reader.nextInt();
+
+	System.out.println("Du skrev: " + n);</pre>
+			Gå ut i fra dette eksempelet til å lage en enkel kalkulator som får brukeren til å skrive inn to tall, legger disse sammen og printer ut summen.<br><br>
+			<b>PS!</b> helt øverst i koden din (utenfor krøllparantesene til 'klassen' din) må du skrive følgende: <pre>import java.util.*;</pre> for å få dette eksempelet til å fungere.
+		</li>
 	</ul>
 
 </div>
