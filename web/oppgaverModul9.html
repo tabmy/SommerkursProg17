@@ -28,13 +28,13 @@
         <a href="oppgaver.html">Oppgaver</a>
     </div>
 </div>
-<div id="overskrift">Oppgavesett 9 - Hva er en nettisde?</div>
+<div id="overskrift">Oppgavesett 9 - Hva er en webapplikasjon?</div>
 <div class="section">
     <h2>1)</h2>
     <ul>
         <li>Hva er forskjell på client-side, server-side og database? Bruk nettet til å finne ut hvordan "backend" og "frontend" relaterer til dette.</li>
         <li>Når ville du ikke trengt en database ved utvikling av en nettside?</li>
-        <li>Tror du nettsidene som er relatert til kurset inneholder en database? Hvorfor/hvorfor ikke?</li>
+        <li>Tror du nettsidene til dette kurset inneholder en database? Hvorfor/hvorfor ikke?</li>
         <li>Du skal lage en nettside for en bedrift. De skal holde oversikt over hvem som går inn og ut av bygget deres. Gi eksempler på hvilke programmeringsspråk du kan bruke i hver del;
             klient-side, server-side og database.</li>
     </ul>
@@ -43,7 +43,7 @@
         <li>Hvorfor er det viktig med UU (Universell Utforming)?</li>
         <li>Hvordan bruker en svaksynt person en nettside? Hva er viktig for en utvikler for å tilrettelegge for at dette blir så lett som mulig for en svaksynt?</li>
         <li>Gå tilbake til nettsiden du lagde i går (modul 8). Argumenter for om denne siden er brukervennlig eller ikke.</li>
-        <li>Bruk en <a href="https://validator.w3.org/">UU-validator</a> til å sjekke din score for siden du lagde i går. Forsøk å gjøre nødvendige endringer for å få maks score. Du kan laste opp filer i de fleste UU-validatorer.</li>
+        <li>Bruk en <a href="https://validator.w3.org/" target="_blank">UU-validator</a> til å sjekke din score for siden du lagde i går. Forsøk å gjøre nødvendige endringer for å få maks score. Du kan laste opp filer i de fleste UU-validatorer.</li>
     </ul>
 
 
@@ -52,16 +52,16 @@
     <ul>
         <p>Nå skal vi går videre med å utvikle hjemmesiden vår, med litt mer fokus på javascript. Vi tar utgangspunkt i at du fortsatt har siden fra forrige modul tilgjenglig, så har du ikke gjort dette, gå tilbake og prioriter det.&#128515;</p>
 
-        <p><i>Nå skal vi begynne å leke litt med Javascript med en knapp og et tekstfelt. Vi skal kunne skrive noe i tekstfeltet, og
+        <p><i>Vi skal begynne å leke litt med Javascript med en knapp og et tekstfelt. Vi skal kunne skrive noe i tekstfeltet, og
             sende den stringen inn i knappen:</i></p>
 
         <li>For å legge til en knapp kan du bruke denne koden:<pre>&lt;button id="knapp"&gt;Tekst til knappen&lt;/button&gt;</pre>Finn ut hvordan du kan
-            plassere knappen midt på siden.</li>
+            plassere knappen midt på siden ved hjelp av CSS.</li>
 
         <li>Opprett et tekstfelt ved hjelp av denne koden: <pre>&lt;input type="text" id="tekstFelt"&gt;</pre>
             Legg merke til attributten "id". Den skal vi bruke videre når vi legger til Javascript. Legg også inn en id i knappen du har opprettet.</li>
 
-        <li>Nederst i html-dokumentet ditt kan du opprette en ny tag &lt;script type="text/javascript"&gt;&lt;/script&gt;. Her kan man skrive Javascript.</li>
+        <li>I &lt;head&gt; taggen din kan du opprette en ny tag &lt;script type="text/javascript"&gt;&lt;/script&gt;. Her kan man skrive Javascript.</li>
 
     </ul>
     <p>Det første du kan skrive inn er dette:</p>
@@ -71,7 +71,7 @@
         slik at du kan bruke dem senere.</p>
     <p>Det neste du kan gjøre er å lage en funksjon under der du deklarerte variablene, fortsatt inne i script-taggen:</p>
     <pre>    function endreTekst() {
-            var knapp.textContent = tekstFelt.value;
+            knapp.textContent = tekstFelt.value;
         }
         </pre>
     <p>Samtidig kan du legge inn en attributt i html-taggen for din button som heter onclick. Den skal ha verdien til funksjonen vår "endreTekst()":</p>
@@ -79,7 +79,8 @@
     <p>Når du nå trykker på knappen skal teksten til knappen endre seg til teksten du skrev inn i tekstfeltet.</p>
     <p><i>Husk, det er ansett som bedre praksis å legge CSS og Javascript i egne dokumenter. Vi har lagt det i samme dokument her bare for enkelthetens skyld </i>&#128515;</p>
 
-    <p><B>Ekstraoppgave:</B> Opprett to tekstfelt og en knapp. Når du trykker på knappen skal den kalle på en Javascript funksjon som legge sammen tallene, og viser resultatet i et pop-up vindu.</p>
+    <p><B>Ekstraoppgave 1:</B> Opprett to tekstfelt og en knapp. Når du trykker på knappen skal den kalle på en Javascript funksjon som legge sammen tallene, og viser resultatet i et pop-up vindu.</p>
+    <p><B>Ekstraoppgave 2:</B> Opprett en knapp som kaller på en Javascript-funksjon som endrer CSS-attributter til HTML-tags, for eksempel et avsnitt.</p>
 
     <p><B>Ferdig med alt? Prøv deg på <a href="sluttTest.html" target="_blank">sluttprøven</a> vår for å se hvordan du ligger an. Du kan også gå til <a href="http://codecademy.com/" target="_blank">Codecademy</a> og begynne på Java/PHP/Javascript-tutorialen der.</B></p>
 </div>
@@ -99,5 +100,6 @@
 </body>
 </html>
 <script>
+
 
 </script>
